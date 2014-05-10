@@ -115,3 +115,11 @@ a {
     display: inline-block;
   }
 }
+
+.stuck {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  z-index:1000;
+  width: 100%;
+}

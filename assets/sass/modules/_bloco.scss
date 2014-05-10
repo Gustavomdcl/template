@@ -1,0 +1,6 @@
+.m-bloco {
+  min-height: 460px;
+  @include respond-to(max-width, $container-max-width) {
+    min-height: 0px;
+  }
+}

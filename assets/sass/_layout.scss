@@ -27,7 +27,7 @@
   padding: $col-padding;
 }
 
-$column_width: percentage(1/$num_columns);
+$column_width: $container-max-width/$num_columns;
 @for $i from 1 through $num_columns {
   .l-col#{$i} { //.col1 .col6
     width: $i * $column_width;
