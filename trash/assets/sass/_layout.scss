@@ -1,0 +1,171 @@
+// container -----------------------------
+
+.l-container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+// row & cf ------------------------------
+
+.l-row,
+.cf {
+  &:before,
+  &:after { content: ''; display: table; }
+  &:after { clear: both; }
+}
+
+// columns http://960.gs -------------------------------
+
+//http://www.w3schools.com/cssref/css_selectors.asp
+[class*=l-col] {
+  @include box-sizing(border-box); // content-box = tamanho dele é definido pelo seu conteúdo apenas | border-box = O width será a soma do conteúdo com a borda e o padding: http://compass-style.org/examples/compass/css3/box_sizing/ , http://sergiolopes.org/css-box-sizing-border-box/
+  float: left;
+  padding: $col-padding;
+}
+
+$column_width: percentage(1/$num_columns);
+@for $i from 1 through $num_columns {
+  .l-col#{$i} { //.col1 .col6
+    width: $i * $column_width;
+    @include respond-to(max-width, $tablet-portrait) {
+      width: 100%;
+    }
+  }
+}
+
+// site ----------------------------------
+
+#site {}
+
+// header --------------------------------
+
+.l-header {
+  background-color: $color-green;
+  color: $color-white; a { color: $color-white; }
+  text-shadow:2px 2px 0px $color-green-dark;
+  @include respond-to(max-width, $tablet-portrait) {
+    img {
+      width: 125px;
+    }
+  }
+  .va-middle {
+    height: 460px;
+    width: $container-max-width;
+  }
+}
+
+.l-header-bottom {
+  background-color: $color-green-dark;
+  color: $color-white; a { color: $color-white; }
+  padding: 10px 0px 5px 0px;
+  .btn-menu {
+    cursor: pointer;
+    color: $color-white;
+    font-size: 3.57em;
+    text-align: center;
+    display: none;
+  }
+  ul {
+    position: relative;
+    text-align: center;
+    li {
+      ul {
+        position: absolute;
+        left: 0px;
+        width: $container-max-width; /* TAMANHO QUE VOCÊ DESEJA - Para ser corrido abaixo deixe apenas sem esse valor */
+        height: 44px;
+        display: none;
+        background-color: $color-green-dark;
+        color: $color-white; a { color: $color-white; }
+        padding: 10px 0px 5px 0px;
+        li {
+          margin-top: 10px;
+        }
+      }
+      a {
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 5px;
+        behavior: url(assets/css/suiting/pie.htc);
+        &:hover, &.active {
+          background-color: $color-green-darker;
+        }
+      }
+    }
+  }
+  @include respond-to(max-width, $tablet-portrait) {
+    z-index: 100;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    .btn-menu {
+      display: inherit;
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      background-color: $color-green-dark;
+    }
+    ul {
+      display: none;
+      padding-top: 70px;
+      li {
+        display: block;
+        padding: 0px 30px 0px 10px;
+        ul {
+          width: 104%;
+          display: block!important;
+          position: inherit;
+          margin: 0px;
+          padding: 0px;
+          li {
+            margin-top: 0px;
+          }
+        }
+        a {
+          display: inline-block;
+          width: 100%;
+          height: auto;
+          padding: 20px 10px;
+        }
+      }
+    }
+  }
+}
+
+.l-mobile-navigation {
+  background-color: $color-red-light;
+  position: fixed;
+  z-index: 120;
+  width: 100%;
+  bottom: 0px;
+  display: none;
+  a {
+    color: $color-white;
+    display: block;
+    cursor: pointer;
+    &:hover {
+      background-color: $color-red-lighter;
+    }
+    &.prev {
+      float: left;
+    }
+    &.next {
+      float: right;
+    }
+    i {
+      cursor: pointer;
+      height: 70px;
+      width: 70px;
+      text-align: center;
+      font-size: 3em;
+    }
+  }
+  @include respond-to(max-width, $tablet-portrait) {
+    display: block;
+  }
+}
+
+@import 'layouts/introducao';

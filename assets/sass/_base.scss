@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+i {
+  font-size: 3.57em;
+}
+
 /* headings --------------------- */
 
 h1, h2, h3, h4, h5, h6 {
@@ -96,87 +100,6 @@ a {
 }
 
 /* classes ------------------------ */
-
-.fx {
-  background-image: url(../img/template/fx.png);
-  height: 100%;
-  @include respond-to(max-width, $tablet-portrait) {
-    @include box-sizing(border-box);
-    height: 89%;
-    //padding-bottom: 10px;
-  }
-}
-
-.va-middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.bloco {
-  min-height: 460px;
-  & > .l-container > .l-row > .m-main-content {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    .va-middle {
-      height: 460px;
-    }
-  }
-  @include respond-to(max-width, $tablet-portrait) {
-    display: none;
-  }
-}
-
-.bloco.atual {
-  @include respond-to(max-width, $tablet-portrait) {
-    @include box-sizing(border-box);
-    display: block;
-    width: 100%;
-    height: auto;
-    padding-top: 70px;
-    margin-bottom: 70px;
-    &>*{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    &:after {
-      content: ' ';
-      display: block;
-      height: 70px;
-      width: 100%;
-    }
-  }
-}
-
-.l-header.bloco.atual {
-  @include respond-to(max-width, $tablet-portrait) {
-    @include box-sizing(border-box);
-    display: block;
-    overflow: auto;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    padding-top: 70px;
-    margin-bottom: 70px;
-    &>*{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    &:after {
-      content: ' ';
-      display: block;
-      height: 70px;
-      width: 100%;
-    }
-  }
-}
-
-.stuck {
-  position: fixed;
-  top: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
-  z-index:1000;
-  width: 100%;
-}
 
 .centralize {
   text-align:center;

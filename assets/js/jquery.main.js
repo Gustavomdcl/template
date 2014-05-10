@@ -1,86 +1,56 @@
 /*! Main v1.00.0 | (c) 2014, 2014 | */
 
-//Variáveis Globais
-var tamanho_tela = $(window).width(); //Tamanho da tela
+// TAMANHO DA TELA ===================
 
-//1 INFOGRAFICO =======================
+var document_width = 960;
+var window_width = $(window).width(); //Tamanho da tela
+$(window).resize(function(){ window_width = $(window).width(); });
 
-//1.1 Tamanho
-if(tamanho_tela >= '768'){
-	infograficoSidebar(true);
-} else {
-	infograficoSidebar(false);
-}
-function infograficoSidebar(e) {
-	$('.m-infografico-sidebar').each(function(){
-		if(e == true) {
-			$(this).children('ul').height($(this).parent('.l-row').parent('.l-container').height());
-		} else {
-			$(this).children('ul').height(0);
-		}
-	});
-}
+// MENU ==============================
 
-//1.2 Botão
-$('.button-infografico').click(function(){
-	if($(this).next('.m-main-content').css('display')=='none') {
-		$(this).next('.m-main-content').css('display','block');
-	} else {
-		$(this).next('.m-main-content').css('display','none');
-	}
-});
+var openMenu = false;
 
-//2 MENU ==============================
-
-//2.1 Waypoints
-$('.l-header-bottom').waypoint('sticky');
-$('.bloco').each(function(){
-	$(this).waypoint(function(){
-		if(tamanho_tela >= '768'){
-			var elementoClasse = $(this).attr('class').split(' ');
-			$('.bloco.atual').removeClass('atual');
-			$(this).addClass('atual');
-			$('.l-header-bottom .active').removeClass('active');
-			$('.l-header-bottom a[href=#' + elementoClasse[0] + ']').addClass('active');
-		}
-	});
-});
-
-//2.2 Clique no menu e Scroll
-$('.scrolltobtn').click(function(e) {
-	e.preventDefault();
-	var sectionscroll = $(this).attr('href');
-	$(sectionscroll).animatescroll({scrollSpeed:2000,easing:'easeInOutBack',padding:0});
-});
-
-//2.2 Clique do botão Responsivo
-$('.btn-menu').click(function(){
-	var valor = $(this).attr('data-value');
-	if(valor == 'false'){
-		$('.l-header-bottom').css('height','100%');
-		$('body').css('overflow','hidden');
+$('.icon-menu').click(function(){
+	if(openMenu == false) {
 		$(this).next('ul').css('display','block');
-		$(this).attr('data-value','true');
-	} else {
-		$('.l-header-bottom').css('height','auto');
-		$('body').css('overflow','auto');
+		$(this).parent('.l-container').parent('.m-menu').addClass('open-nav');
+		openMenu = true;
+	} else if(openMenu == true) {
 		$(this).next('ul').css('display','none');
-		$(this).attr('data-value','false');
+		$(this).parent('.l-container').parent('.m-menu').removeClass('open-nav');
+		openMenu = false;
 	}
 });
 
-//2.3 Resize Responsivo
+// DROPDOWN ==========================
+
+$('.nav li').mouseenter(function () {
+	if(window_width>document_width){
+		$(this).children('.nav').css('display','block');
+	}
+});
+
+$('.nav li').mouseleave(function () {
+	if(window_width>document_width){
+		$(this).children('.nav').css('display','none');
+	}
+});
+
+// RESIZE ============================
+
 $(window).resize(function(){
-	tamanho_tela = $(window).width();
-	if(tamanho_tela >= '768'){
-		infograficoSidebar(true);
-		$('body').css('overflow','auto');
-		$('.btn-menu').next('ul').css('display','block');
+	if(window_width>document_width){
+		//Maior ====================================================================
+		//Menu Dropdown
+		$('.l-header-bottom .nav .nav').css('display', 'none');
+		$('.icon-menu').next('ul').css('display','block');
 	} else {
-		infograficoSidebar(false);
-		$('.l-header-bottom').css('height','auto');
-		$('body').css('overflow','auto');
-		$('.btn-menu').next('ul').css('display','none');
-		$('.btn-menu').attr('data-value','false');
+		//Menor ====================================================================
+		//Menu Dropdown
+		$('.l-header-bottom .nav .nav').css('display', 'block');
+		//Menu Mobile
+		$('.icon-menu').next('ul').css('display','none');
+		$('.icon-menu').parent('.l-container').parent('.m-menu').removeClass('open-nav');
+		openMenu = false;
 	}
 });

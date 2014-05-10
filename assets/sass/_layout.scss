@@ -1,8 +1,12 @@
 // container -----------------------------
 
 .l-container {
-  max-width: $container-max-width;
+  width: $container-max-width;
   margin: 0 auto;
+  @include respond-to(max-width, $container-max-width) {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 // row & cf ------------------------------
@@ -27,121 +31,25 @@ $column_width: percentage(1/$num_columns);
 @for $i from 1 through $num_columns {
   .l-col#{$i} { //.col1 .col6
     width: $i * $column_width;
-    @include respond-to(max-width, $tablet-portrait) {
-      width: 100%;
-    }
   }
 }
-
-// site ----------------------------------
-
-#site {}
 
 // header --------------------------------
 
-.l-header {
-  background-color: $color-green;
-  color: $color-white; a { color: $color-white; }
-  text-shadow:2px 2px 0px $color-green-dark;
-  @include respond-to(max-width, $tablet-portrait) {
-    img {
-      width: 125px;
-    }
-  }
-  .va-middle {
-    height: 460px;
-    width: $container-max-width;
-  }
-}
+.l-header {}
+.l-header-top {}
+.l-header-center {}
+.l-header-bottom {}
 
-.l-header-bottom {
-  background-color: $color-green-dark;
-  color: $color-white; a { color: $color-white; }
-  padding: 10px 0px 5px 0px;
-  .btn-menu {
-    cursor: pointer;
-    color: $color-white;
-    font-size: 3.57em;
-    text-align: center;
-    display: none;
-  }
-  ul {
-    text-align: center;
-    li {
-      a {
-        width: 80px;
-        height: 40px;
-        padding: 10px;
-        border-radius: 5px;
-        behavior: url(assets/css/suiting/pie.htc);
-        &:hover, &.active {
-          background-color: $color-green-darker;
-        }
-      }
-    }
-  }
-  @include respond-to(max-width, $tablet-portrait) {
-    z-index: 100;
-    position: fixed;
-    overflow: auto;
-    top: 0px;
-    width: 100%;
-    height: auto;
-    .btn-menu {
-      display: inherit;
-      position: fixed;
-      width: 100%;
-      top: 0px;
-      background-color: $color-green-dark;
-    }
-    ul {
-      display: none;
-      padding-top: 70px;
-      li {
-        display: block;
-        padding: 0px 30px 0px 10px;
-        a {
-          display: inline-block;
-          width: 100%;
-          height: auto;
-          padding: 20px 10px;
-        }
-      }
-    }
-  }
-}
+// main ----------------------------------
 
-.l-mobile-navigation {
-  background-color: $color-red-light;
-  position: fixed;
-  z-index: 120;
-  width: 100%;
-  bottom: 0px;
-  display: none;
-  a {
-    color: $color-white;
-    display: block;
-    cursor: pointer;
-    &:hover {
-      background-color: $color-red-lighter;
-    }
-    &.prev {
-      float: left;
-    }
-    &.next {
-      float: right;
-    }
-    i {
-      cursor: pointer;
-      height: 70px;
-      width: 70px;
-      text-align: center;
-      font-size: 3em;
-    }
-  }
-  @include respond-to(max-width, $tablet-portrait) {
-    display: block;
-  }
-}
+.l-main {}
+.l-main-sidebar {}
+.l-main-content {}
 
-@import 'layouts/introducao';
+// footer --------------------------------
+
+.l-footer {}
+.l-footer-top {}
+.l-footer-center {}
+.l-footer-bottom {}
