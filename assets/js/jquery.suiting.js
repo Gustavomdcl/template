@@ -29,6 +29,7 @@ var ieVersion = (function() { if (new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})").exec
 if(ieVersion) {
 	//Is FireFox
 	$('body').addClass('ie');
+	alert("Seu navegador não é adequado para visualizar este curso, recomendamos que utilize o Google Chrome para navegação, ou atualize seu navegador." );
 }
 
 	//IE 8
@@ -36,6 +37,7 @@ if(ieVersion) {
 	if(isIE8) {
 		//Is IE8
 		$('body').addClass('ie8');
+		alert("Seu navegador não é adequado para visualizar este curso, recomendamos que utilize o Google Chrome para navegação, ou atualize seu navegador." );
 	}
 
 	//IE 9
@@ -43,6 +45,7 @@ if(ieVersion) {
 	if(isIE9) {
 		//Is IE9
 		$('body').addClass('ie9');
+		alert("Seu navegador não é adequado para visualizar este curso, recomendamos que utilize o Google Chrome para navegação, ou atualize seu navegador." );
 	}
 
 	//IE 10

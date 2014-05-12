@@ -28,6 +28,7 @@
 				position: absolute;
 				left: 0px;
 				top: 70px;
+				z-index: 10;
 				@include box-sizing(border-box);
 				padding: 10px;
 				width: 100%;
@@ -45,8 +46,9 @@
 	@include respond-to(max-width, $container-max-width) {
 		width: 100%;
 		position: fixed;
-		z-index: 100;
+		z-index: 120;
 		top: 0px;
+		height: 70px;
 		overflow: auto;
 		.icon-menu {
 			@include box-sizing(border-box);
@@ -56,14 +58,14 @@
 			width: 100%;
 			text-align: center;
 			position: fixed;
-			z-index: 110;
+			z-index: 120;
 			top: 0px;
 			background-color: $color-green-dark;
 		}
 		& .l-container>ul { 
 			display:none;
 			@include box-sizing(border-box);
-			padding: 70px 10px 10px 10px;
+			padding: 70px 10px 70px 10px;
 		}
 		ul {
 			li {
@@ -93,6 +95,14 @@
 		}
 		&.open-nav {
 			height: 100%;
+		}
+	}
+	@include respond-to(max-width, $mobile-landscape) {
+		height: 45px;
+		.icon-menu {
+			i {
+				font-size: 25px;
+			}
 		}
 	}
 }

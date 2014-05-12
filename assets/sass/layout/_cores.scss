@@ -1,0 +1,203 @@
+.saiba_mais {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-red;
+	}
+	.m-bg {
+		background-color: $color-red-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-red;
+			}
+		}
+	}
+}
+
+.verde_musgo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-darker;
+	}
+	.m-bg {
+		background-color: $color-green-dark;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-darker;
+			}
+		}
+	}
+}
+
+.verde_claro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green;
+	}
+	.m-bg {
+		background-color: $color-green-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green;
+			}
+		}
+	}
+}
+
+.verde_padrao {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-dark;
+	}
+	.m-bg {
+		background-color: $color-green;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-dark;
+			}
+		}
+	}
+}
+
+.laranja {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-red-light;
+	}
+	.m-bg {
+		background-color: $color-orange;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-red-light;
+			}
+		}
+	}
+}
+
+.amarelo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-orange;
+	}
+	.m-bg {
+		background-color: $color-yellow;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-orange;
+			}
+		}
+	}
+}
+
+.verde_amarelado {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-light;
+	}
+	.m-bg {
+		background-color: $color-musgo;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-light;
+			}
+		}
+	}
+}
+
+.azul_escuro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-base;
+	}
+	.m-bg {
+		background-color: $color-blue-dark;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-base;
+			}
+		}
+	}
+}
+
+.azul_medio {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-blue-dark;
+	}
+	.m-bg {
+		background-color: $color-blue;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-blue-dark;
+			}
+		}
+	}
+}
+
+.azul_claro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-blue;
+	}
+	.m-bg {
+		background-color: $color-blue-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-blue;
+			}
+		}
+	}
+}
+
+.roxo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-purple-dark;
+	}
+	.m-bg {
+		background-color: $color-purple;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-purple-dark;
+			}
+		}
+	}
+}
+
+.rosa {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-purple;
+	}
+	.m-bg {
+		background-color: $color-pink;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-purple;
+			}
+		}
+	}
+}

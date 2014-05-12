@@ -6,6 +6,9 @@ body {
   color: $color-base;
   // -webkit-font-smoothing: antialiased;
   //         font-smoothing: antialiased;
+  @include respond-to(max-width, $container-max-width) {
+    padding-top: 30px;
+  }
 }
 
 p {
@@ -14,6 +17,8 @@ p {
 
 img {
   max-width: 100%;
+  border-radius: 10px;
+  behavior: url(assets/css/suiting/pie.htc);
 }
 
 i {
@@ -113,6 +118,29 @@ a {
 .nav {
   li {
     display: inline-block;
+  }
+}
+
+.list {
+  padding-top: 35px;
+  li {
+    padding-left: 30px;
+    padding-bottom: 4px;
+    list-style-position: inside;
+    &:before {
+      /* For a round bullet */
+      content:'\2022';
+      /* For a square bullet */
+      /*content:'\25A0';*/
+      display: block;
+      position: relative;
+      max-width: 0px;
+      max-height: 0px;
+      left: -20px;
+      top: -7px;
+      font-size: 25px;
+      z-index: 1;
+    }
   }
 }
 

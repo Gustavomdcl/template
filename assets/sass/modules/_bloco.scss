@@ -1,6 +1,14 @@
 .m-bloco {
   min-height: 460px;
+  position: relative;
   @include respond-to(max-width, $container-max-width) {
+    display: none;
     min-height: 0px;
+  }
+}
+
+.m-bloco.atual {
+  @include respond-to(max-width, $container-max-width) {
+    display: block;
   }
 }

@@ -10,7 +10,7 @@
     display: block;
     cursor: pointer;
     &:hover {
-      background-color: $color-red-lighter;
+      //background-color: $color-red-lighter;
     }
     &.prev {
       float: left;
@@ -30,5 +30,14 @@
   }
   @include respond-to(max-width, $container-max-width) {
     display: block;
+  }
+  @include respond-to(max-width, $mobile-landscape) {
+    a {
+      i {
+        font-size: 25px;
+        width: 45px;
+        height: 45px;
+      }
+    }
   }
 }

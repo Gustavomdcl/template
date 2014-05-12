@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="robots" content="NOINDEX, nofollow" />
-	<meta name="author" content="Gustavo Lima">
+	<meta name="author" content="Agência Webnauta">
   	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,7 @@
 
 	<!-- icon
 	======================================================== -->
-	<link rel="shortcut icon" href="assets/img/template/.ico">
+	<link rel="shortcut icon" href="assets/img/template/icon.gif" type="image/x-icon">
 
 	<!-- styles
 	======================================================== -->
@@ -27,6 +27,8 @@
 	<link rel="stylesheet" href="assets/css/font-awesome.css">
 	<!-- Main Style -->
 	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Fancy Box http://fancybox.net/ -->
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
 	<!-- Adjust Style -->
 	<link rel="stylesheet" href="assets/css/adjust.css">
 	<!-- modernizr modernizr.com -->
@@ -42,17 +44,17 @@
 
 		<!-- header 
 		======================================================== -->
-		<header id="l-header" class="m-bloco">
+		<header id="l-header" class="m-bloco atual verde_padrao">
 
-			<div class="m-bg" style="background-image: url('http://upload.wikimedia.org/wikipedia/commons/c/ce/The_Milky_Way_galaxy_center_(composite_image).jpg');">
+			<div class="m-bg" style="background-image: url('assets/img/template/capa.png');">
 
-				<div class="m-fx type1">
+				<div class="m-fx triangulos">
 
 					<div class="l-container cf">
 
 						<div class="m-text capa">
 
-							<a href="http://anhembi.br" target="_blank"><img src="assets/img/template/universidade-anhembi-morumbi.png" alt="Logo Anhembi Morumbi"></a>
+							<a href="http://anhembi.br" target="_blank"><img src="assets/img/template/universidade-anhembi-morumbi.png" alt="Logo Anhembi Morumbi" class="no-fancybox"></a>
 
 							<h1>Design Thinking</h1>
 
@@ -62,7 +64,7 @@
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
@@ -85,8 +87,9 @@
 						<li>
 							<a href="#l-content">Conteúdo</a>
 							<ul class="nav">
-								<li><a href="#l-boss">Boss</a></li>
-								<li><a href="#l-amor">Amor</a></li>
+								<li><a href="#l-exemplo1">Exemplo 1</a></li>
+								<li><a href="#l-exemplo2">Exemplo 2</a></li>
+								<li><a href="#l-saiba1">Saiba Mais</a></li>
 							</ul>
 						</li>
 						<li><a href="#l-sintese">Síntese</a></li>
@@ -103,32 +106,60 @@
 		======================================================== -->
 		<nav class="m-mobile-navigation">
 
-			<a class="prev"><i class="fa fa-arrow-left"></i></a>
+			<a href="javascript:controlador('volta');" class="prev"><i class="fa fa-arrow-left"></i></a>
 
-			<a class="next"><i class="fa fa-arrow-right"></i></a>
+			<a href="javascript:controlador('avanca');" class="next"><i class="fa fa-arrow-right"></i></a>
 
 		</nav><!-- .m-mobile-navigation -->
+
+		<!-- Inicio Infografico 
+		======================================================== -->
+		<div class="m-infografico-inicio"></div><!-- .m-infografico-inicio -->
 
 		<!-- introducao 
 		======================================================== -->
 		<section id="l-introducao" class="m-bloco">
 
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-bookmark"></i></a>
+								<div class="m-main-content">
+
+									<div class="scroll-content">
+
+										<header><h1>Sobre</h1></header>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+
+									</div><!-- .scroll-content -->
+
+								</div><!-- .m-main-content -->
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
+
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="l-container cf">
 
-					<div class="l-container cf">
+					<div class="m-text">
 
-						<div class="m-text">
+							<header><h1>Introdução</h1></header>
+							<p>Etiam convallis dui sed nibh <strong>tempor</strong>, nec commodo elit eleifend. Pellentesque a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. <strong>Suspendisse</strong> quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur:</p>
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+							<ul class="list">
+								<li>Lacinia massa ac, laoreet dolor.</li>
+								<li>In posuere mauris ac arcu laoreet, non sollicitudin est lobortis.</li>
+								<li>Nullam vel facilisis felis.</li>
+								<li>Etiam sed orci tellus.</li>
+							</ul>
 
-						</div><!-- .m-text -->
+					</div><!-- .m-text -->
 
-					</div><!-- .l-container.cf -->
-
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .l-container.cf -->
 
 			</div><!-- .m-bg -->
 
@@ -136,24 +167,40 @@
 
 		<!-- sumario 
 		======================================================== -->
-		<section id="l-sumario" class="m-bloco">
+		<section id="l-sumario" class="m-bloco laranja">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-list"></i></a>
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
 
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="m-fx triangulos">
 
 					<div class="l-container cf">
 
 						<div class="m-text">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+								<header><h1>Sumário</h1></header>
+								<ul class="sumary">
+									<li>Etiam convallis dui sed nibh tempor</li>
+									<li>Etiam convallis dui sed nibh tempor</li>
+									<li>Etiam convallis dui sed nibh tempor</li>
+									<li>Etiam convallis dui sed nibh tempor</li>
+									<li>Etiam convallis dui sed nibh tempor</li>
+								</ul>
 
 						</div><!-- .m-text -->
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
@@ -161,99 +208,203 @@
 
 		<!-- content 
 		======================================================== -->
-		<section id="l-content" class="m-bloco">
+		<section id="l-content" class="m-bloco azul_claro right-info">
+
+			<div class="m-infografico-change"></div><!-- .m-infografico-change -->
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-list-ol"></i></a>
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
 
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="m-fx triangulos">
 
 					<div class="l-container cf">
 
 						<div class="m-text">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+								<header><h1>1. Oportunidades de Inovação</h1>
+								<h2>Metodologias e estratégias de mercado por necessidades</h2></header>
 
 						</div><!-- .m-text -->
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
 		</section><!-- #l-content.m-bloco -->
 
-		<!-- boss 
+		<!-- exemplo 
 		======================================================== -->
-		<section id="l-boss" class="m-bloco">
+		<section id="l-exemplo1" class="m-bloco roxo right-info">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+								<div class="m-main-content">
+
+									<div class="scroll-content">
+
+										<header><h1>Sobre</h1></header>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+
+									</div><!-- .scroll-content -->
+
+								</div><!-- .m-main-content -->
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
 
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="m-fx triangulos">
 
 					<div class="l-container cf">
 
 						<div class="m-text">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+								<div class="l-col-p12">
+									<header><h1>Exemplo 1</h1></header>
+								</div><!-- .l-col-p12 -->
+
+								<div class="l-col-p7">
+									<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis.</p>
+								</div><!-- .l-col-p7 -->
+
+								<div class="l-col-p5">
+									<img src="http://cdn.phys.org/newman/gfx/news/2013/darkmatteran.jpg">
+								</div><!-- .l-col-p5 -->
 
 						</div><!-- .m-text -->
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
-		</section><!-- #l-boss.m-bloco -->
+		</section><!-- #l-exemplo1.m-bloco -->
 
-		<!-- amor 
+		<!-- exemplo 
 		======================================================== -->
-		<section id="l-amor" class="m-bloco">
+		<section id="l-exemplo2" class="m-bloco azul_claro right-info">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+								<div class="m-main-content">
+
+									<div class="scroll-content">
+
+										<header><h1>Sobre</h1></header>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus.</p>
+
+									</div><!-- .scroll-content -->
+
+								</div><!-- .m-main-content -->
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
 
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="m-fx pontos">
 
 					<div class="l-container cf">
 
 						<div class="m-text">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+								<div class="l-col-p12">
+									<header><h1>Exemplo 2</h1></header>
+								</div><!-- .l-col-p12 -->
+
+								<div class="l-col-p7">
+									<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis.</p>
+								</div><!-- .l-col-p7 -->
+
+								<div class="l-col-p5">
+									<img src="http://cdn.phys.org/newman/gfx/news/2013/darkmatteran.jpg">
+								</div><!-- .l-col-p5 -->
 
 						</div><!-- .m-text -->
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
-		</section><!-- #l-amor.m-bloco -->
+		</section><!-- #l-exemplo2.m-bloco -->
+
+		<!-- saiba1 
+		======================================================== -->
+		<section id="l-saiba1" class="m-bloco saiba_mais">
+
+			<div class="m-bg" style="background-image: url('');">
+
+				<div class="l-container cf">
+
+					<div class="m-text">
+
+							<header><h1>Saiba Mais</h1></header>
+							<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur:</p>
+							<img src="assets/img/upload/exemplo.jpg">
+
+					</div><!-- .m-text -->
+
+				</div><!-- .l-container.cf -->
+
+			</div><!-- .m-bg -->
+
+		</section><!-- #l-saiba1.m-bloco -->
 
 		<!-- sintese 
 		======================================================== -->
-		<section id="l-sintese" class="m-bloco">
+		<section id="l-sintese" class="m-bloco verde_padrao">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-anchor"></i></a>
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
 
 			<div class="m-bg" style="background-image: url('');">
 
-				<div class="m-fx type1">
+				<div class="m-fx triangulos">
 
 					<div class="l-container cf">
 
 						<div class="m-text">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+								<header><h1>Síntese</h1></header>
+								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur:</p>
 
 						</div><!-- .m-text -->
 
 					</div><!-- .l-container.cf -->
 
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .m-fx.triangulos -->
 
 			</div><!-- .m-bg -->
 
@@ -261,99 +412,49 @@
 
 		<!-- referencias 
 		======================================================== -->
-		<section id="l-referencias" class="m-bloco">
+		<section id="l-referencias" class="m-bloco referencias_bibliograficas verde_musgo">
 
-			<div class="m-bg" style="background-image: url('');">
+			<div class="m-infografico-final">
 
-				<div class="m-fx type1">
+				<ul>
+					<li>
+						<a class="button-infografico"><i class="fa fa-book"></i></a>
+					</li>
+				</ul>
 
-					<div class="l-container cf">
+			</div><!-- .m-infografico-final -->
 
-						<div class="m-text">
+			<div class="m-bg">
 
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
+				<div class="l-container cf">
 
-						</div><!-- .m-text -->
+					<div class="m-text">
+							
+							<div class="l-col-p12">
+								<header><h1>Referências</h1></header>
+							</div><!-- .l-col-p12 -->
 
-					</div><!-- .l-container.cf -->
+							<div class="l-col-p6">
+								<p>ANSOFF, H. I. A nova estratégia empresarial. São Paulo: Atlas, 1990.<br>
+								DRUCKER, P. F. Sociedade pós-capitalista. São Paulo: Pioneira, 1994.<br>
+								DRUCKER, Peter. As novas realidades: no governo e na política, na economia e nas empresas, na sociedade e na visão de mundo. São Paulo: Pioneira, 1989.<br>
+								EDVINSON, L.; MALONE, M. S. Capital intelectual. São Paulo: Makron Books, 1998.<br>
+								LÉVY, P. A Inteligência coletiva: por uma antropologia do ciberespaço. São Paulo: Loyola.1998.<br>
+								MOTTA Fernando P. e VASCONCELOS, Isabella F. Teoria Geral da Administração. São Paulo: Pioneira, 2004.</p>
+							</div><!-- .l-col-p6 -->
 
-				</div><!-- .m-fx.type1 -->
+							<div class="l-col-p6">
+								<p>MOTTA, P. R. Gestão contemporânea: a ciência e a arte de ser dirigente. Rio de Janeiro: Record, 1991.<br>
+								STEWART, T. A. Capital intelectual: a nova vantagem competitiva das empresas. Rio de Janeiro: Campus, 1998.<br>
+								SVEIBY, K. E. A nova riqueza das organizações. Rio de Janeiro: Campus, 1998.<br>THURLER, Monica Gather. Sistemas de avaliação educacional. Revista Ideias. São Paulo: FDE, 1998. Nº 30.<br>
+								TOFFLER, A. A terceira onda. Rio de Janeiro: Record, 1980.<br>
+								TOFFLER, A. As mudanças do poder. Rio de Janeiro: Record,1994.<br>
+								VIEIRA, Alexandre Thomaz e outros. Gestão educacional e tecnologia. São Paulo: Avercamp, 2003.</p>
+							</div><!-- .l-col-p6 -->
 
-			</div><!-- .m-bg -->
+					</div><!-- .m-text -->
 
-		</section><!-- #l-referencias.m-bloco -->
-
-		<!-- referencias 
-		======================================================== -->
-		<section id="l-referencias" class="m-bloco">
-
-			<div class="m-bg" style="background-image: url('');">
-
-				<div class="m-fx type1">
-
-					<div class="l-container cf">
-
-						<div class="m-text">
-
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
-
-						</div><!-- .m-text -->
-
-					</div><!-- .l-container.cf -->
-
-				</div><!-- .m-fx.type1 -->
-
-			</div><!-- .m-bg -->
-
-		</section><!-- #l-referencias.m-bloco -->
-
-		<!-- referencias 
-		======================================================== -->
-		<section id="l-referencias" class="m-bloco">
-
-			<div class="m-bg" style="background-image: url('');">
-
-				<div class="m-fx type1">
-
-					<div class="l-container cf">
-
-						<div class="m-text">
-
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
-
-						</div><!-- .m-text -->
-
-					</div><!-- .l-container.cf -->
-
-				</div><!-- .m-fx.type1 -->
-
-			</div><!-- .m-bg -->
-
-		</section><!-- #l-referencias.m-bloco -->
-
-		<!-- referencias 
-		======================================================== -->
-		<section id="l-referencias" class="m-bloco">
-
-			<div class="m-bg" style="background-image: url('');">
-
-				<div class="m-fx type1">
-
-					<div class="l-container cf">
-
-						<div class="m-text">
-
-								<header><h1>Introdução</h1></header>
-								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong> a quam et nulla accumsan ultrices non nec leo. Maecenas accumsan in odio eget blandit. Vivamus id tincidunt elit. In cursus metus neque, vitae viverra massa blandit sed. Suspendisse quis ligula non urna tristique fermentum viverra eu arcu. Nam pretium nulla vitae elementum sollicitudin. Donec fermentum accumsan elit, id tincidunt lacus blandit a. Duis dapibus justo consectetur: Lacinia massa ac, laoreet dolor. In posuere mauris ac arcu laoreet, non sollicitudin est lobortis. Nullam vel facilisis felis. Etiam sed orci tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque arcu eget vulputate hendrerit. Vivamus urna neque, accumsan nec lacus quis, porttitor vehicula arcu. Mauris at tellus risus. Pellentesque et lectus lorem. Integer dui neque, scelerisque id purus id, cursus tempor lorem. Nullam mauris metus, mattis quis augue at, egestas mollis quam. Aliquam malesuada convallis diam, eu lobortis tellus porttitor sit amet. Maecenas aliquam lobortis massa non cursus.</p>
-
-						</div><!-- .m-text -->
-
-					</div><!-- .l-container.cf -->
-
-				</div><!-- .m-fx.type1 -->
+				</div><!-- .l-container.cf -->
 
 			</div><!-- .m-bg -->
 
@@ -366,9 +467,13 @@
 	======================================================== -->
 	<!-- jquery jquery.com -->
 	<script src="assets/min/jquery.min.js?v=1.11.0"></script>
+	<!-- jquery ui jqueryui.com -->
+	<script src="assets/min/jquery.ui.min.js"></script>
 	<!-- waypoints -->
 	<script src="assets/min/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="assets/min/jquery.waypoints-sticky.min.js" type="text/javascript"></script>
+	<!-- fancy box http://fancybox.net/ -->
+	<script type="text/javascript" src="assets/min/jquery.fancybox.min.js?v=2.1.5"></script>
 	<!-- scroll animate http://plugins.compzets.com/animatescroll/# -->
 	<script src="assets/min/jquery.animatescroll.min.js"></script>
 	<!-- suiting -->
