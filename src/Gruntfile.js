@@ -50,6 +50,9 @@ module.exports = function( grunt ) {
           ],
           '../assets/min/jquery.main.min.js': [
             '../assets/js/jquery.main.js'
+          ],
+          '../assets/min/jquery.maps.min.js': [
+            '../assets/js/jquery.maps.js'
           ]
         }
       }

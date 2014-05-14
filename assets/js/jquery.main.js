@@ -97,23 +97,23 @@ $('.nav li').mouseleave(function () {
 // MOBILE-TEXT =======================
 
 function MobileTextResize(e){
-	if(e==1){
-		if(window_width<document_width){//mobile
-			$('.m-text').each(function(){
-				$(this).width(window_width-20);
-				$(this).height(window_height-140);
-			});
-		} else {
-			$('.m-text').each(function(){
-				if($(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('saiba_mais') || $(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('referencias_bibliograficas')) { } else {
-				if($(this).hasClass('capa')) {
-						$(this).width(document_width);
-					} else {
-						$(this).width(640);
-					}
-					$(this).height(460);
+	if(window_width<document_width){//mobile
+		$('.m-text').each(function(){
+			$(this).width(window_width-20);
+			$(this).height(window_height-140);
+		});
+	} else {
+		$('.m-text').each(function(){
+			if($(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('saiba_mais') || $(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('referencias_bibliograficas')) { } else {
+			if($(this).hasClass('capa')) {
+					$(this).width(document_width);
+				} else {
+					$(this).width(640);
 				}
-			});
+				$(this).height(460);
+			}
+		});
+		if(e==1){
 			if(document_position<544){
 				$('.stuck').removeClass('stuck');
 				$('.sticky-wrapper').height($('.l-menu').height());
@@ -121,13 +121,6 @@ function MobileTextResize(e){
 				$('.l-menu').addClass('stuck');
 				$('.sticky-wrapper').height($('.l-menu').height());
 			}
-		}
-	} else {
-		if(window_width<document_width){//mobile
-			$('.m-text').each(function(){
-				$(this).width(window_width-20);
-				$(this).height(window_height-140);
-			});
 		}
 	}
 }
@@ -203,6 +196,16 @@ function resizeMaior(){
 			,1000
 		);
 	}
+	//sanfona
+	if(resizeSanfona == true) {
+		refreshSanfona();
+		resizeSanfona = false;
+	}
+	//aba
+	if(resizeAba == true) {
+		refreshAba();
+		resizeAba = false;
+	}
 }
 
 function resizeMenor(){
@@ -222,6 +225,44 @@ function resizeMenor(){
 		});
 		mobileResizeWay = true;
 	}
+	//sanfona
+	resizeSanfona = true;
+	//aba
+	resizeAba = true;
+}
+
+// SANFONA ===========================
+var icons = {
+	header: "fa-chevron-circle-right",
+	activeHeader: "fa-chevron-circle-down"
+};
+
+var resizeSanfona = false;
+
+$('.sanfona').each(function(){
+	$(this).accordion({
+      icons: icons
+    });
+});
+
+function refreshSanfona() {
+	$( ".sanfona" ).each(function(){
+		$(this).accordion( "refresh" );
+	});
+}
+
+// Aba ===========================
+
+var resizeAba = false;
+
+$( ".aba" ).each(function(){
+	$(this).tabs({ heightStyle: "auto" });
+});
+
+function refreshAba() {
+	$( ".aba" ).each(function(){
+		$(this).tabs( "refresh" );
+	});
 }
 
 /************ DECLARE **************/
@@ -310,6 +351,10 @@ function vai(novoSlide){
 			travaTeclado=false;
 			//Aciona função atualizaSistema();
 			atualizaSistema();
+			//sanfona
+			refreshSanfona();
+			//aba
+			refreshAba();
 		}
 	}
 }
@@ -364,7 +409,11 @@ function controlador(posicao) {
 				travaTeclado=true;
 				//Inicia função voltaSlide();
 				voltaSlide();
-			} 
+			}
+			//sanfona
+			refreshSanfona();
+			//aba
+			refreshAba();
 		}
 	}
 }
@@ -390,6 +439,10 @@ function avancaSlide(){
 		travaTeclado=false;
 		//Aciona função atualizaSistema();
 		atualizaSistema();
+		//sanfona
+		refreshSanfona();
+		//aba
+		refreshAba();
 	}
 }
 
@@ -413,6 +466,10 @@ function voltaSlide(){
 		travaTeclado=false;
 		//Aciona função atualizaSistema();
 		atualizaSistema();
+		//sanfona
+		refreshSanfona();
+		//aba
+		refreshAba();
 	}
 }
 

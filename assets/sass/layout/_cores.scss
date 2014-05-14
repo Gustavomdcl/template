@@ -13,6 +13,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-red;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-red-lighter;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-red;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-red-lighter;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-red-light;
+			}
+		}
+	}
 }
 
 .verde_musgo {
@@ -27,6 +52,31 @@
 		li {
 			&:before {
 				color: $color-green-darker;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-dark;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-darker;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-dark;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-darker;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green-dark;
 			}
 		}
 	}
@@ -47,6 +97,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-light;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-light;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green-light;
+			}
+		}
+	}
 }
 
 .verde_padrao {
@@ -61,6 +136,31 @@
 		li {
 			&:before {
 				color: $color-green-dark;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green;
 			}
 		}
 	}
@@ -81,6 +181,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-orange;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-red-light;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-orange;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-red-light;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-orange;
+			}
+		}
+	}
 }
 
 .amarelo {
@@ -95,6 +220,31 @@
 		li {
 			&:before {
 				color: $color-orange;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-yellow;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-orange;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-yellow;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-orange;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-yellow;
 			}
 		}
 	}
@@ -115,6 +265,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-musgo;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-light;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-musgo;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-light;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-musgo;
+			}
+		}
+	}
 }
 
 .azul_escuro {
@@ -129,6 +304,31 @@
 		li {
 			&:before {
 				color: $color-base;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-dark;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-base;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-dark;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-base;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue-dark;
 			}
 		}
 	}
@@ -149,6 +349,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-blue-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-blue-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue;
+			}
+		}
+	}
 }
 
 .azul_claro {
@@ -163,6 +388,31 @@
 		li {
 			&:before {
 				color: $color-blue;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-light;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-blue;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-light;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-blue;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue-light;
 			}
 		}
 	}
@@ -183,6 +433,31 @@
 			}
 		}
 	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-purple;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-purple-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-purple;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-purple-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-purple;
+			}
+		}
+	}
 }
 
 .rosa {
@@ -197,6 +472,31 @@
 		li {
 			&:before {
 				color: $color-purple;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-pink;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-purple;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-pink;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-purple;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-pink;
 			}
 		}
 	}

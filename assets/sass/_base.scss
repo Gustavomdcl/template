@@ -123,6 +123,8 @@ a {
 
 .list {
   padding-top: 35px;
+  display: inline-block;
+  padding-bottom: 30px;
   li {
     padding-left: 30px;
     padding-bottom: 4px;
@@ -142,6 +144,10 @@ a {
       z-index: 1;
     }
   }
+}
+
+.ScrollSceneIndicators {
+  display: none!important;
 }
 
 .stuck {

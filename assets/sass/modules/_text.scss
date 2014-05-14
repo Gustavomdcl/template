@@ -5,6 +5,9 @@
 	width: 7 * ($container-max-width/$num_columns);
 	height: 460px;
 	padding-left: 320px;
+	a {
+		text-decoration: underline;
+	}
 	&.capa {
 		width: $container-max-width;
 		text-align: center;
