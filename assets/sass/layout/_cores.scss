@@ -38,6 +38,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-red;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .verde_musgo {
@@ -77,6 +85,14 @@
 		li {
 			.fa {
 				color: $color-green-dark;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-darker;
+				color: $color-white;
 			}
 		}
 	}
@@ -122,6 +138,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .verde_padrao {
@@ -161,6 +185,14 @@
 		li {
 			.fa {
 				color: $color-green;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-dark;
+				color: $color-white;
 			}
 		}
 	}
@@ -206,6 +238,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-red-light;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .amarelo {
@@ -245,6 +285,14 @@
 		li {
 			.fa {
 				color: $color-yellow;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-orange;
+				color: $color-white;
 			}
 		}
 	}
@@ -290,6 +338,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-light;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .azul_escuro {
@@ -329,6 +385,14 @@
 		li {
 			.fa {
 				color: $color-blue-dark;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-base;
+				color: $color-white;
 			}
 		}
 	}
@@ -374,6 +438,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-blue-dark; 
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .azul_claro {
@@ -413,6 +485,14 @@
 		li {
 			.fa {
 				color: $color-blue-light;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-blue;
+				color: $color-white;
 			}
 		}
 	}
@@ -458,6 +538,14 @@
 			}
 		}
 	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-purple-dark;
+				color: $color-white;
+			}
+		}
+	}
 }
 
 .rosa {
@@ -497,6 +585,14 @@
 		li {
 			.fa {
 				color: $color-pink;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-purple;
+				color: $color-white;
 			}
 		}
 	}

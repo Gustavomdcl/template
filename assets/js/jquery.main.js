@@ -226,6 +226,26 @@ function fancyBoxLoader() {
 	});
 }
 
+// FLIPBOARD =========================
+
+$('.flipboard li').mouseenter(function(){
+	$(this).children('.cover').animate({
+	    top: "-=200"
+	  }, 500, function() {
+	    // Animation complete.
+	 });
+});
+
+$('.flipboard li').mouseleave(function(){
+	$(this).children('.cover').animate({
+	    top: "+=200"
+	  }, 500, function() {
+	    // Animation complete.
+	 });
+});
+
+
+
 // INFOGRAFICO =======================
 
 //Tamanho

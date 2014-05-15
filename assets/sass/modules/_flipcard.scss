@@ -1,0 +1,37 @@
+.flipboard {
+	padding: 30px 0px;
+	li{
+		margin: 5px;
+		width: 200px;
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+		.cover {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			* {
+				width: 200px;
+				height: 200px;
+				display: table-cell;
+				background-color: $color-base;
+				color: $color-white;
+				text-shadow: none;
+				text-align: center;
+				vertical-align: middle;
+			}
+		}
+		.the_content {
+			@include box-sizing(border-box);
+			padding: 0px 10px;
+			width: 200px;
+			height: 200px;
+			overflow: auto;
+			color: $color-base;
+			background-color: $color-white;
+		}
+	}
+	@include respond-to(max-width, $container-max-width) {
+		text-align: center;
+	}
+}
