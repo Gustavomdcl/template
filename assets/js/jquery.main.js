@@ -43,7 +43,14 @@ $(document).scroll(function () {
 
 // SCROLL MAGIC ===================
 
+var isMobileOffset = 120;
+
 function scrollMagic() {
+	if(window_width>document_width){
+		isMobileOffset = 120;
+	} else {
+		isMobileOffset = -1000000;
+	}
 	controller = new ScrollMagic();
 
 	// build tween
@@ -60,7 +67,7 @@ function scrollMagic() {
 	$('.m-infografico-sidebar ul').each(function(e){
 		var tween = TweenMax.fromTo($(this), 0.5, {height: 0}, {height: $(this).parent('.m-infografico-sidebar').parent('.m-bloco').height()});
 		// build scene
-		var scene = new ScrollScene({triggerElement: $(this), offset: 120})
+		var scene = new ScrollScene({triggerElement: $(this), offset: isMobileOffset})
 						.setTween(tween)
 						.addTo(controller);
 		// show indicators (requires debug extension)
@@ -78,13 +85,15 @@ function scrollMagic() {
 	});
 
 	$('.m-infografico-final').each(function(e){
-		var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0});
-		// build scene
-		var scene = new ScrollScene({triggerElement: $(this)})
-						.setTween(tween)
-						.addTo(controller);
-		// show indicators (requires debug extension)
-		scene.addIndicators();
+		if(window_width>document_width){
+			var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0});
+			// build scene
+			var scene = new ScrollScene({triggerElement: $(this)})
+							.setTween(tween)
+							.addTo(controller);
+			// show indicators (requires debug extension)
+			scene.addIndicators();
+		} else {}
 	});
 
 	$('.m-infografico-change').each(function(e){
@@ -98,13 +107,15 @@ function scrollMagic() {
 	});
 
 	$('.m-infografico-sidebar ul li').each(function(e){
-		var tween = TweenMax.from($(this), 0.25, {autoAlpha: 0, height: 0, width: 0});
-		// build scene
-		var scene = new ScrollScene({triggerElement: $(this).parent('ul'), offset: 120})
-						.setTween(tween)
-						.addTo(controller);
-		// show indicators (requires debug extension)
-		scene.addIndicators();
+		if(window_width>document_width){
+			var tween = TweenMax.from($(this), 0.25, {autoAlpha: 0, height: 0, width: 0});
+			// build scene
+			var scene = new ScrollScene({triggerElement: $(this).parent('ul'), offset: isMobileOffset})
+							.setTween(tween)
+							.addTo(controller);
+			// show indicators (requires debug extension)
+			scene.addIndicators();
+		} else {}
 	});
 }
 
@@ -221,6 +232,7 @@ function fancyBoxLoader() {
 function infograficoSidebar(e) {
 	$('.m-infografico-sidebar').each(function(){
 		if(e == true) {
+			//alert($(this).parent('.m-bloco').attr('id') + ' height: ' + $(this).parent('.m-bloco').height());
 			$(this).children('ul').height($(this).parent('.m-bloco').height());
 		} else {
 			$(this).children('ul').height(0);
@@ -285,6 +297,8 @@ function resizeMaior(){
 		refreshAba();
 		resizeAba = false;
 	}
+	//Scroll Magic
+	isMobileOffset = 120;
 }
 
 function resizeMenor(){
@@ -308,6 +322,8 @@ function resizeMenor(){
 	resizeSanfona = true;
 	//aba
 	resizeAba = true;
+	//Scroll Magic
+	isMobileOffset = -1000000;
 }
 
 // SANFONA ===========================

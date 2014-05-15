@@ -1,0 +1,24 @@
+@include respond-to(max-width, $container-max-width) {
+	.slider {
+		.m-text {
+			@include box-sizing(border-box);
+			padding-left: 60px;
+			padding-right: 60px;
+			width: 100%!important;
+		}
+	}
+}
+
+#prox, #ante {
+	position: absolute;
+	z-index: 150;
+	top: 50%;
+	margin-top: -45px;
+	font-size: 25px;
+}
+#prox {
+	right: 10px;
+}
+#ante {
+	left: 10px;
+}

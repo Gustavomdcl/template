@@ -1,4 +1,5 @@
 .m-fx {
+	width: 100%;
 	min-height: 460px;
 	@include respond-to(max-width, $container-max-width) {
 		min-height: auto;
@@ -24,4 +25,18 @@
 }
 .pontos {
 	background-image: url(../img/template/fx5.png);
+}
+
+.slider-background {
+  background-size: cover;
+  background-position: center;
+  min-height: 460px;
+  @include respond-to(max-width, $container-max-width) {
+    min-height: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
 }
