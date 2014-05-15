@@ -749,30 +749,7 @@
 	<!-- Scroll Magic http://janpaepke.github.io/ScrollMagic/#info -->
 	<script type="text/javascript" src="assets/min/TweenMax.min.js"></script>
 	<script src="assets/min/jquery.scrollmagic.min.js"></script>
-	<script type="text/javascript" src="assets/min/jquery.scrollmagic.debug.js"></script>
-	<script>
-		$(document).ready(function($) {
-
-			controller = new ScrollMagic();
-
-			// build tween
-			$('.m-text').each(function(e){
-
-
-				var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0, scale: 0.7});
-				
-				// build scene
-				var scene = new ScrollScene({triggerElement: $(this)})
-								.setTween(tween)
-								.addTo(controller);
-
-				// show indicators (requires debug extension)
-				scene.addIndicators();
-
-			});
-			
-		});
-	</script>
+	<script type="text/javascript" src="assets/min/jquery.scrollmagic.debug.min.js"></script>
 	<!-- suiting -->
 	<script src="assets/min/jquery.suiting.min.js"></script><!-- GRUNT http://blog.henriquesilverio.com/javascript-e-jquery/grunt-js-automatize-tarefas-e-otimize-o-seu-workflow/ -->
 	<!-- mobile -->

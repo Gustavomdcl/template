@@ -53,6 +53,9 @@ module.exports = function( grunt ) {
           ],
           '../assets/min/jquery.maps.min.js': [
             '../assets/js/jquery.maps.js'
+          ],
+          '../assets/min/jquery.scrollmagic.debug.min.js': [
+            '../assets/js/jquery.scrollmagic.debug.js'
           ]
         }
       }

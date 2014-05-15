@@ -1,13 +1,25 @@
 /*! Main v1.00.0 | (c) 2014, 2014 | */
 
 // DOCUMENT LOAD =====================
-$(window).load(function(){
-	MobileTextResize(0);
-	if(window_width>document_width){
-		infograficoSidebar(true);
-	} else {
-		infograficoSidebar(false);
-	}
+//$(window).load(function(){});
+
+// DOCUMENT READY ====================
+/** Declaração do Sistema **/
+$(document).ready(function(){
+		//Inicia a função atualizaSistema();
+		atualizaSistema();
+		//Inicia Mobile Resize
+		MobileTextResize(0);
+		//Inicia Infográfico
+		if(window_width>document_width){
+			infograficoSidebar(true);
+		} else {
+			infograficoSidebar(false);
+		}
+		//Inicia Scroll Magic
+		scrollMagic();
+		//Inicia Fancybox
+		fancyBoxLoader();
 });
 
 // TAMANHO DA TELA ===================
@@ -28,6 +40,73 @@ var document_position = $(document).scrollTop();
 $(document).scroll(function () {
 	document_position = $(this).scrollTop();
 });
+
+// SCROLL MAGIC ===================
+
+function scrollMagic() {
+	controller = new ScrollMagic();
+
+	// build tween
+	$('.m-text').each(function(e){
+		var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0, scale: 0.7,});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this)})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+	$('.m-infografico-sidebar ul').each(function(e){
+		var tween = TweenMax.fromTo($(this), 0.5, {height: 0}, {height: $(this).parent('.m-infografico-sidebar').parent('.m-bloco').height()});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this), offset: 120})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+	$('.m-infografico-inicio').each(function(e){
+		var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this)})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+	$('.m-infografico-final').each(function(e){
+		var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this)})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+	$('.m-infografico-change').each(function(e){
+		var tween = TweenMax.from($(this), 0.5, {autoAlpha: 0});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this)})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+
+	$('.m-infografico-sidebar ul li').each(function(e){
+		var tween = TweenMax.from($(this), 0.25, {autoAlpha: 0, height: 0, width: 0});
+		// build scene
+		var scene = new ScrollScene({triggerElement: $(this).parent('ul'), offset: 120})
+						.setTween(tween)
+						.addTo(controller);
+		// show indicators (requires debug extension)
+		scene.addIndicators();
+	});
+}
 
 // MENU DESKTOP ======================
 
@@ -127,14 +206,14 @@ function MobileTextResize(e){
 
 // FANCYBOX ==========================
 
-$(document).ready(function() {
+function fancyBoxLoader() {
 	$('.modal').fancybox();
 	$("img").click(function() {
 		if($(this).hasClass('no-fancybox')){} else{
 			$.fancybox.open($(this).attr('src'));
 		}
 	});
-});
+}
 
 // INFOGRAFICO =======================
 
@@ -282,14 +361,6 @@ var travaTeclado=false;
 var slideCount = slideId.length-1;
 /**========== /DECLARAÇÕES DE VARIÁVEIS ==========**/
 
-/**========== INICIA APLICATIVO ==========**/
-/** Declaração do Sistema **/
-$(document).ready(
-	function(){
-		//Inicia a função atualizaSistema();
-		atualizaSistema();
-	}
-);
 /**========== /INICIA APLICATIVO ==========**/
 
 /**========== ATUALIZA SISTEMA ==========**/

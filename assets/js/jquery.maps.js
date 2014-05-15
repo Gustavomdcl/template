@@ -50,7 +50,8 @@ long_total=long_total/centro_mapa.length;
     zoom: 13,
     center: firstPoint,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
-		mapTypeId: 'Styled',
+    scrollwheel: false,
+	mapTypeId: 'Styled',
   };
 
   var directionsDisplay;
