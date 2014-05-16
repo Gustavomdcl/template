@@ -1,4 +1,4 @@
-.saiba_mais {
+.saiba_mais, .teste_conhecimentos {
 	color: $color-white; a { color: $color-white; }
 	h1, h2, h3, h4, h5, h6, a {
 		text-shadow:2px 2px 0px $color-red;
@@ -46,6 +46,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-red-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-red-light;;
+    	background-color: $color-white;
+    }
 }
 
 .verde_musgo {
@@ -96,6 +104,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-green-dark;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green-dark;
+    	background-color: $color-white;
+    }
 }
 
 .verde_claro {
@@ -146,6 +162,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-green-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green-light;
+    	background-color: $color-white;
+    }
 }
 
 .verde_padrao {
@@ -196,6 +220,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-green;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green;
+    	background-color: $color-white;
+    }
 }
 
 .laranja {
@@ -246,6 +278,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-orange;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-orange;
+    	background-color: $color-white;
+    }
 }
 
 .amarelo {
@@ -296,6 +336,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-yellow;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-yellow;
+    	background-color: $color-white;
+    }
 }
 
 .verde_amarelado {
@@ -346,6 +394,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-musgo;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-musgo;
+    	background-color: $color-white;
+    }
 }
 
 .azul_escuro {
@@ -396,6 +452,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-blue-dark;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue-dark;
+    	background-color: $color-white;
+    }
 }
 
 .azul_medio {
@@ -446,6 +510,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-blue;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue;
+    	background-color: $color-white;
+    }
 }
 
 .azul_claro {
@@ -496,6 +568,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-blue-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue-light;
+    	background-color: $color-white;
+    }
 }
 
 .roxo {
@@ -546,6 +626,14 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-purple;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-purple;
+    	background-color: $color-white;
+    }
 }
 
 .rosa {
@@ -596,4 +684,12 @@
 			}
 		}
 	}
+	.teste .questao .number {
+		color: $color-pink;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-pink;
+    	background-color: $color-white;
+    }
 }

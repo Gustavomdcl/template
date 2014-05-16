@@ -1,0 +1,36 @@
+#l-sumario {
+  .sumary {
+    li {
+      background-color: $color-orange-light;
+      display: block;
+      padding: 10px 10px 10px 40px;
+      margin-bottom: 10px;
+      font-family: 'Bitter Bold', sans-serif;
+      font-size: 1.42em;
+      @include box-sizing(border-box);
+      @include respond-to(max-width, $mobile-landscape) {
+        font-size: 1.2em;
+      }
+      &:before {
+        color: $color-white;
+        /* For a round bullet */
+        display: inline-block;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        content:'\f138';
+        display: block;
+        position: relative;
+        max-width: 0px;
+        max-height: 0px;
+        left: -31px;
+        top: 2px;
+        font-size: 25px;
+        z-index: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.saiba_mais {
+  .m-text {
+    &:before {
+      color: $color-white;
+      /* For a round bullet */
+      display: inline-block;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content:'\f055';
+      display: block;
+      font-size: 245px;
+      margin-right: 100px;
+      z-index: 1;
+      float: left;
+      @include respond-to(max-width, $container-max-width) {
+        margin-top: 20px;
+        font-size: 80px;
+        margin-right: 10px;
+      }
+      @include respond-to(max-width, $tablet-portrait) {
+        font-size: 50px;
+        margin-right: 10px;
+      }
+    }
+  }
+  &:after {
+    content:' ';
+    border-top: 28px solid $color-red-light;
+    border-bottom: none;
+    border-right: 27px solid transparent;
+    border-left: 27px solid transparent;
+    position:absolute;
+    left:50%;
+    margin-left: -426px;
+    bottom: -28px;
+    display:block;
+    z-index: 10;
+    @include respond-to(max-width, $container-max-width) {
+      display: none;
+    }
+  }
+}

@@ -184,6 +184,77 @@ $('.nav li').mouseleave(function () {
 	}
 });
 
+// TESTE CONHECIMENTOS ===============
+
+$('.teste').each(function(){
+	//Cada teste
+	var questionCount = 1;
+	var questionList = new Array();
+	var completedQuestions = new Array();
+	$(this).children('div').children('.questao').each(function(questionNumber){
+		//Cada Questão do teste
+		//Soma na variável de questões
+		questionList.push({ 
+			"question": $(this),
+			"taken": false  
+		});
+		//Adiciona um número antes
+		$(this).children('.pergunta').after( "<span class='number'>" + questionCount + "</span>" );
+		questionCount ++;//Contador
+		$(this).children('.value').each(function(){
+			//Cada Value da Questão
+			$(this).click(function(){
+				//Muda o valor do taken
+				questionList[questionNumber].taken = true;
+				//Clique no value deixa ele active
+				$(this).addClass('active').siblings().removeClass('active');
+			});
+		});
+	});
+	//Clique no enviar:
+	$(this).children('.enviar').click(function(e){
+		e.preventDefault();
+		$.each(questionList, function(number, valor){//alert(number); alert(valor.question); alert(valor.taken);
+			//Identifica se existem questões a serem preenchidas
+			if(valor.taken == false){//Questão incompleta
+				valor.question.effect( "shake", {}, 500 );
+			} else {//Questão completa
+				//Preenche as questões realizadas
+				if($.inArray(number, completedQuestions) == -1){
+					completedQuestions.push(number);
+				}
+			}
+		});
+		$.each(questionList, function(number, valor){//alert(number); alert(valor.question); alert(valor.taken);
+			//Apresenta o resultado		
+			if(completedQuestions.length == questionList.length) {
+				//Se todas as questões foram preenchidas
+				valor.question.children('.active').each(function(){
+					//Para cada value com um active
+					if($(this).data('valor').indexOf('c') > -1) {
+						//Questão correta
+						valor.question.children('.resposta').addClass('correta');
+						valor.question.children('.resposta').fadeIn(400);
+					} else {
+						//Questão errada
+						valor.question.children('.resposta').addClass('errada');
+						valor.question.children('.resposta').fadeIn(400);
+					}
+				});
+				valor.question.children('.value').each(function(){
+					//Para cada value correto
+					if($(this).data('valor').indexOf('c') > -1) {
+						//Questão correta
+						$(this).addClass('correto');
+					} else {
+						//Questão errada
+					}
+				});
+			}
+		});
+	});
+});
+
 // MOBILE-TEXT =======================
 
 function MobileTextResize(e){
@@ -194,7 +265,7 @@ function MobileTextResize(e){
 		});
 	} else {
 		$('.m-text').each(function(){
-			if($(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('saiba_mais') || $(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('referencias_bibliograficas')) { } else {
+			if($(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('saiba_mais') || $(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('teste_conhecimentos') || $(this).parent('.l-container').parent('.m-bg').parent('.m-bloco').hasClass('referencias_bibliograficas')) { } else {
 			if($(this).hasClass('capa')) {
 					$(this).width(document_width);
 				} else {
