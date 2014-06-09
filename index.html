@@ -31,8 +31,34 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.fancybox.css?v=2.1.5" media="screen" />
 	<!-- Adjust Style -->
 	<link rel="stylesheet" href="assets/css/adjust.css">
+	<!-- bookblock -->
+	<link rel="stylesheet" type="text/css" href="assets/bookblock/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/bookblock/css/bookblock.css" />
+	<link rel="stylesheet" type="text/css" href="assets/bookblock/css/component.css" />
+	<!-- Galeria -->
+	<link rel="stylesheet" type="text/css" href="assets/galeria/css/component.css" />
+	<link rel="stylesheet" type="text/css" href="assets/galeria/css/fxsmall.css" />
 	<!-- modernizr modernizr.com -->
 	<script src="assets/min/modernizr.min.js"></script>
+	<script src="assets/bookblock/js/modernizr.custom.js"></script>
+	<style>
+	.m-menu ul li ul {
+		top: 50px;
+	}
+	.component.component-small.fxPhotoBrowse {
+		margin-top: 50px;
+	}
+	.component.component-small.fxPhotoBrowse .prev:before {
+		font-family: FontAwesome;
+		content: "\f053";
+		color: #fff;
+	}
+	.component.component-small.fxPhotoBrowse .next:before {
+		font-family: FontAwesome;
+		content: "\f054";
+		color: #fff;
+	}
+	</style>
 
 </head>
 
@@ -94,10 +120,12 @@
 								<li><a href="#l-modal">Modal</a></li>
 								<li><a href="#l-aba">Aba</a></li>
 								<li><a href="#l-saiba1">Saiba Mais</a></li>
+								<li><a href="#l-page-flip">Page Flip</a></li>
 								<li><a href="#l-qc-icone">Quadro Clique</a></li>
 								<li><a href="#l-slider">Slider</a></li>
 								<li><a href="#l-teste">Teste seus Conhecimentos</a></li>
 								<li><a href="#l-mapa">Mapa</a></li>
+								<li><a href="#l-galeria-img">Galeria de Imagem</a></li>
 							</ul>
 						</li>
 						<li><a href="#l-sintese">Síntese</a></li>
@@ -629,6 +657,129 @@
 
 		</section><!-- #l-saiba1.m-bloco -->
 
+		<!-- page-flip 
+		======================================================== -->
+		<section id="l-page-flip" class="m-bloco azul_medio">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
+
+			<div class="m-bg" style="background-image: url('');">
+
+				<div class="m-fx triangulos">
+
+					<div class="l-container cf">
+
+						<div class="m-text">
+
+							<header><h1>Page Flip</h1></header>
+							<p>Clique no livro abaixo para ter acesso</p>
+
+							<figure class='book' id='scroll-wrap' style='text-align: center;'>
+								<!-- Front -->
+								<ul class='hardcover_front'>
+									<li>
+										<div class="coverDesign blue">
+											<h1>Título</h1>
+											<p>Subtítulo</p>
+										</div>
+									</li>
+									<li></li>
+								</ul>
+								<!-- Pages -->
+								<ul class='page'>
+									<li></li>
+									<li>
+										<div id="bookshelf" class="bookshelf">
+											<figure>
+												<div class="book" data-book="book-1"></div>
+												<div class="buttons"><a class="btn" href="#">Leia Mais</a><a href=""></a></div>
+												<div class="details"><ul><li></li></ul></div>
+											</figure>
+										</div>
+									</li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+								<!-- Back -->
+								<ul class='hardcover_back'><li></li><li></li></ul><ul class='book_spine'><li></li><li></li></ul>
+
+							</figure>
+
+						</div><!-- .m-text -->
+
+					</div><!-- .l-container.cf -->
+
+					<!-- LIVRO ABERTO ABAIXO --> 
+
+				</div><!-- .m-fx.triangulos -->
+
+			</div><!-- .m-bg -->
+
+		</section><!-- #l-page-flip.m-bloco -->
+
+		<!-- Fullscreen BookBlock -->
+		<!-- for demo purpose we repeat each bookblock -->
+		<div class="bb-custom-wrapper" id="book-1">
+			<div class="bb-bookblock">
+				<div class="bb-item">
+					<div class="bb-custom-side page-layout-3">
+						<div>
+							<h3>Portraits</h3>
+							<p>Photography (1999 &ndash; 2013)</p>
+						</div>
+					</div>
+					<div class="bb-custom-side page-layout-3">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus id tempus commodo. Fusce pulvinar risus in metus lobortis adipiscing. Quisque ac augue nulla. Donec vitae facilisis urna. Duis risus turpis, vestibulum sit amet mauris ut, lobortis vulputate lacus. Aliquam tincidunt augue elementum sollicitudin faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin purus et urna pulvinar facilisis. Nulla facilisi. Sed ultrices ligula eu diam ultrices laoreet.</p>
+							<br>
+							<p>Nullam ac erat ultrices, consequat mauris eget, faucibus odio. Aenean aliquam dui a velit condimentum pellentesque. Donec blandit scelerisque risus, viverra molestie massa vehicula non. Curabitur eleifend porttitor vestibulum. Etiam sit amet orci ipsum. Suspendisse potenti. Fusce in euismod massa, ut varius turpis. Proin rhoncus metus ut cursus ornare. Integer nec sem commodo dui laoreet placerat nec nec odio. Aliquam at risus at mi dictum malesuada.</p>
+						</div>
+					</div>
+				</div>
+				<div class="bb-item">
+					<div class="bb-custom-side page-layout-1">
+						<h3>
+							Chapter 9 <span>Nomadic Lifestyle</span>
+						</h3>
+					</div>
+					<div class="bb-custom-side page-layout-1">
+						<p>Candy canes lollipop macaroon marshmallow gummi bears tiramisu. Dessert croissant cupcake candy canes. Bear claw faworki faworki lemon drops. Faworki marzipan sugar plum jelly-o marzipan cookie.</p>
+					</div>
+				</div>
+				<div class="bb-item">
+					<div class="bb-custom-side page-layout-3">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus id tempus commodo. Fusce pulvinar risus in metus lobortis adipiscing. Quisque ac augue nulla. Donec vitae facilisis urna. Duis risus turpis, vestibulum sit amet mauris ut, lobortis vulputate lacus. Aliquam tincidunt augue elementum sollicitudin faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin purus et urna pulvinar facilisis. Nulla facilisi. Sed ultrices ligula eu diam ultrices laoreet.</p>
+							<br>
+							<p>Nullam ac erat ultrices, consequat mauris eget, faucibus odio. Aenean aliquam dui a velit condimentum pellentesque. Donec blandit scelerisque risus, viverra molestie massa vehicula non. Curabitur eleifend porttitor vestibulum. Etiam sit amet orci ipsum. Suspendisse potenti. Fusce in euismod massa, ut varius turpis. Proin rhoncus metus ut cursus ornare. Integer nec sem commodo dui laoreet placerat nec nec odio. Aliquam at risus at mi dictum malesuada.</p>
+						</div>
+					</div>
+					<div class="bb-custom-side page-layout-3">
+						<div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit lacus id tempus commodo. Fusce pulvinar risus in metus lobortis adipiscing. Quisque ac augue nulla. Donec vitae facilisis urna. Duis risus turpis, vestibulum sit amet mauris ut, lobortis vulputate lacus. Aliquam tincidunt augue elementum sollicitudin faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam sollicitudin purus et urna pulvinar facilisis. Nulla facilisi. Sed ultrices ligula eu diam ultrices laoreet.</p>
+							<br>
+							<p>Nullam ac erat ultrices, consequat mauris eget, faucibus odio. Aenean aliquam dui a velit condimentum pellentesque. Donec blandit scelerisque risus, viverra molestie massa vehicula non. Curabitur eleifend porttitor vestibulum. Etiam sit amet orci ipsum. Suspendisse potenti. Fusce in euismod massa, ut varius turpis. Proin rhoncus metus ut cursus ornare. Integer nec sem commodo dui laoreet placerat nec nec odio. Aliquam at risus at mi dictum malesuada.</p>
+						</div>
+					</div>
+				</div>
+			</div><!-- /bb-bookblock -->
+			<nav>
+				<a href="#" class="bb-nav-prev">Anterior</a>
+				<a href="#" class="bb-nav-next">Próximo</a>
+				<a href="#" class="bb-nav-close">Fechar</a>
+			</nav>
+		</div><!-- /bb-custom-wrapper -->
+
 		<!-- qc-icone 
 		======================================================== -->
 		<section id="l-qc-icone" class="m-bloco azul_escuro">
@@ -866,6 +1017,56 @@
 
 		</section><!-- #l-mapa.m-bloco -->
 
+		<!-- galeria-img 
+		======================================================== -->
+		<section id="l-galeria-img" class="m-bloco azul_escuro">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
+
+			<div class="m-bg" style="background-image: url('');">
+
+				<div class="m-fx triangulos">
+
+					<div class="l-container cf">
+
+						<div class="m-text">
+
+							<header><h1>Galeria de Imagem</h1></header>
+							<p>Clique nas setas para ver mais imagens</p>
+
+							<div id="component" class="component component-small">
+								<ul class="itemwrap">
+									<li class="current"><img src="assets/img/upload/1.jpg" alt="img01"/></li>
+									<li><img src="assets/img/upload/2.jpg" alt="img02"/></li>
+									<li><img src="assets/img/upload/3.jpg" alt="img03"/></li>
+									<li><img src="assets/img/upload/4.jpg" alt="img04"/></li>
+									<li><img src="assets/img/upload/5.jpg" alt="img05"/></li>
+								</ul>
+								<nav>
+									<a class="prev" href="#">Previous item</a>
+									<a class="next" href="#">Next item</a>
+								</nav>
+							</div>
+
+						</div><!-- .m-text -->
+
+					</div><!-- .l-container.cf -->
+
+				</div><!-- .m-fx.triangulos -->
+
+			</div><!-- .m-bg -->
+
+		</section><!-- #l-galeria-img.m-bloco -->
+
 		<!-- sintese 
 		======================================================== -->
 		<section id="l-sintese" class="m-bloco verde_padrao">
@@ -952,6 +1153,7 @@
 		</section><!-- #l-referencias.m-bloco -->
 
 
+
 	</div><!-- #site -->
 
 	<!-- javascript
@@ -973,6 +1175,13 @@
 	<script type="text/javascript" src="assets/min/TweenMax.min.js"></script>
 	<script src="assets/min/jquery.scrollmagic.min.js"></script>
 	<script type="text/javascript" src="assets/min/jquery.scrollmagic.debug.min.js"></script>
+	<!-- Book Block -->
+	<script src="assets/bookblock/js/bookblock.min.js"></script>
+	<script src="assets/bookblock/js/classie.js"></script>
+	<script src="assets/bookblock/js/bookshelf.js"></script>
+	<!-- Galeria -->
+	<script src="assets/galeria/js/classie.js"></script>
+	<script src="assets/galeria/js/main.js"></script>
 	<!-- suiting -->
 	<script src="assets/min/jquery.suiting.min.js"></script><!-- GRUNT http://blog.henriquesilverio.com/javascript-e-jquery/grunt-js-automatize-tarefas-e-otimize-o-seu-workflow/ -->
 	<!-- mobile -->
@@ -980,7 +1189,6 @@
 	<!-- main -->
 	<script src="assets/min/jquery.main.min.js"></script><!-- GRUNT http://blog.henriquesilverio.com/javascript-e-jquery/grunt-js-automatize-tarefas-e-otimize-o-seu-workflow/ -->
 	<!-- google maps api -->
-	<script src="assets/min/jquery.maps.min.js" type="text/javascript"></script>
-
+	<script src="assets/min/jquery.maps.min.js" type="text/javascript"></script>		
 </body>
 </html>

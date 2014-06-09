@@ -76,6 +76,9 @@
     }
     .number + .value {
       margin-top: 40px;
+      @include respond-to(max-width, $container-max-width) {
+        margin-top: 80px;
+      }
     }
     .value {
       position: relative;
@@ -84,7 +87,8 @@
         position: absolute;
         content: "\f10c";
         left: 0px;
-        top: 3px;
+        top: 50%;
+        margin-top: -8px;
         display: inline-block;
         font-family: FontAwesome;
         font-style: normal;
