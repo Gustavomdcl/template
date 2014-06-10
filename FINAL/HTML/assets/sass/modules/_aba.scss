@@ -1,0 +1,61 @@
+.aba {
+	overflow:  hidden;
+	clear: both;
+	padding: 30px 0px;
+	ul.ui-tabs-nav {
+		@include box-sizing(border-box);
+		float: left;
+		width:33.33333%;
+		li {
+			background-color: $color-base;
+			color: $color-white;
+			margin-bottom: 10px;
+			a {
+				display: block;
+				padding: 10px;
+				outline: none;
+				text-shadow: none;
+				text-decoration: none;
+				&:before {
+					content: "\f055";
+					margin-right: 10px;
+					font-size: 20px;
+					display: inline-block;
+					font-family: FontAwesome;
+					font-style: normal;
+					font-weight: normal;
+					line-height: 1;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+			}
+			&.ui-state-active {
+				a {
+					&:before {
+						content: "\f056";
+					}
+				}
+			}
+		}
+		@include respond-to(max-width, $container-max-width) {
+			li {
+				text-align: center;
+			}
+			width:100%;
+		}
+	}
+	div.ui-tabs-panel {
+		padding: 20px;
+		background-color: $color-white;
+		color: $color-base;
+		@include box-sizing(border-box);
+		float: right;
+		width:66.66667%;
+		h1, h2, h3, h4, h5, h6 {
+			text-shadow: none;
+		}
+		@include respond-to(max-width, $container-max-width) {
+			width:100%;
+		}
+	}
+}

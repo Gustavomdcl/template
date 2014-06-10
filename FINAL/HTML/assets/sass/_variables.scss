@@ -1,0 +1,56 @@
+// colors ----------------------------------
+$color-white:         #FFFFFF;
+$color-black:         #222222;
+
+$color-gray:          #CCCCCC;
+$color-gray-light:    #f3f3f3;
+$color-gray-lighter:  #E6E6E6;
+$color-gray-dark:     #444444;
+$color-gray-darker:   #111111;
+
+$color-red:           #d31805;
+$color-red-light:     #cd3734;
+$color-red-lighter:   #e84c41;
+
+$color-pink:          #d71d51;
+
+$color-orange:        #ff9600;
+$color-orange-light:  #ffbf00;
+
+$color-yellow:        #fae001;
+
+$color-musgo:         #9cc023;
+
+$color-green:         #276b53;
+$color-green-light:   #159f46;
+$color-green-dark:    #084449;
+$color-green-darker:  #07393d;
+
+$color-blue:          #1b598a;
+$color-blue-light:    #0a70b4;
+$color-blue-dark:     #31465a;
+
+$color-purple:        #8a4b9e;
+$color-purple-dark:   #5e326b;
+
+$color-base:          $color-black;
+
+$color-right:         $color-musgo;
+$color-wrong:         $color-red;
+
+// layout ----------------------------------
+
+$num_columns:             12;
+$col-padding:             5px 10px;
+$container-max-width:     960px;
+
+// line breaks -----------------------------
+
+$mobile-portrait:     320px;
+$mobile-landscape:    480px;
+$tablet-portrait:     768px;
+$tablet-landscape:    1024px;
+
+// sprites ---------------------------------
+
+//$sprite: sprite-map('sprite/*.png'); //@include sprite(nome_arquivo);

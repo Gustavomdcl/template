@@ -1,0 +1,83 @@
+// container -----------------------------
+
+.l-container {
+  width: $container-max-width;
+  margin: 0 auto;
+  @include respond-to(max-width, $container-max-width) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+// row & cf ------------------------------
+
+.l-row,
+.cf {
+  &:before,
+  &:after { content: ''; display: table; }
+  &:after { clear: both; }
+}
+
+// columns http://960.gs -------------------------------
+
+//http://www.w3schools.com/cssref/css_selectors.asp
+[class*=l-col] {
+  @include box-sizing(border-box); // content-box = tamanho dele é definido pelo seu conteúdo apenas | border-box = O width será a soma do conteúdo com a borda e o padding: http://compass-style.org/examples/compass/css3/box_sizing/ , http://sergiolopes.org/css-box-sizing-border-box/
+  float: left;
+  padding: $col-padding;
+}
+
+//http://www.w3schools.com/cssref/css_selectors.asp
+[class*=l-col-p] {
+  @include box-sizing(border-box); // content-box = tamanho dele é definido pelo seu conteúdo apenas | border-box = O width será a soma do conteúdo com a borda e o padding: http://compass-style.org/examples/compass/css3/box_sizing/ , http://sergiolopes.org/css-box-sizing-border-box/
+  float: left;
+  padding: 0px $col-padding;
+}
+
+$column_width: $container-max-width/$num_columns;
+@for $i from 1 through $num_columns {
+  .l-col#{$i} { //.col1 .col6
+    width: $i * $column_width;
+  }
+}
+
+$column_width-p: percentage(1/$num_columns);
+@for $i from 1 through $num_columns {
+  .l-col-p#{$i} { //.col1 .col6
+    display: table-cell;
+    vertical-align: middle;
+    width: $i * $column_width-p;
+    @include respond-to(max-width, $mobile-landscape) {
+      width: 100%;
+    }
+  }
+}
+
+// header --------------------------------
+
+.l-header {}
+.l-header-top {}
+.l-header-center {}
+.l-header-bottom {}
+
+// main ----------------------------------
+
+.l-main {}
+.l-main-sidebar {}
+.l-main-content {}
+
+// footer --------------------------------
+
+.l-footer {}
+.l-footer-top {}
+.l-footer-center {}
+.l-footer-bottom {}
+
+// import --------------------------------
+
+@import 'layout/introducao';
+@import 'layout/saiba-mais';
+@import 'layout/sumario';
+@import 'layout/referencias-bibliograficas';
+@import 'layout/teste-conhecimentos';
+@import 'layout/cores';

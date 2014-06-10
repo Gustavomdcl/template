@@ -1,0 +1,695 @@
+.saiba_mais, .teste_conhecimentos {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-red;
+	}
+	.m-bg {
+		background-color: $color-red-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-red;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-red;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-red-lighter;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-red;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-red-lighter;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-red-light;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-red;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-red-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-red-light;;
+    	background-color: $color-white;
+    }
+}
+
+.verde_musgo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-darker;
+	}
+	.m-bg {
+		background-color: $color-green-dark;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-darker;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-dark;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-darker;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-dark;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-darker;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green-dark;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-darker;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-green-dark;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green-dark;
+    	background-color: $color-white;
+    }
+}
+
+.verde_claro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green;
+	}
+	.m-bg {
+		background-color: $color-green-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-light;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green-light;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green-light;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-green-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green-light;
+    	background-color: $color-white;
+    }
+}
+
+.verde_padrao {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-dark;
+	}
+	.m-bg {
+		background-color: $color-green;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-dark;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-green;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-green;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-dark;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-green;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-green;
+    	background-color: $color-white;
+    }
+}
+
+.laranja {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-red-light;
+	}
+	.m-bg {
+		background-color: $color-orange;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-red-light;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-orange;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-red-light;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-orange;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-red-light;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-orange;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-red-light;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-orange;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-orange;
+    	background-color: $color-white;
+    }
+}
+
+.amarelo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-orange;
+	}
+	.m-bg {
+		background-color: $color-yellow;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-orange;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-yellow;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-orange;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-yellow;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-orange;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-yellow;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-orange;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-yellow;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-yellow;
+    	background-color: $color-white;
+    }
+}
+
+.verde_amarelado {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-green-light;
+	}
+	.m-bg {
+		background-color: $color-musgo;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-green-light;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-musgo;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-green-light;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-musgo;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-green-light;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-musgo;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-green-light;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-musgo;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-musgo;
+    	background-color: $color-white;
+    }
+}
+
+.azul_escuro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-base;
+	}
+	.m-bg {
+		background-color: $color-blue-dark;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-base;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-dark;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-base;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-dark;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-base;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue-dark;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-base;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-blue-dark;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue-dark;
+    	background-color: $color-white;
+    }
+}
+
+.azul_medio {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-blue-dark;
+	}
+	.m-bg {
+		background-color: $color-blue;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-blue-dark;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-blue-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-blue-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-blue-dark; 
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-blue;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue;
+    	background-color: $color-white;
+    }
+}
+
+.azul_claro {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-blue;
+	}
+	.m-bg {
+		background-color: $color-blue-light;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-blue;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-light;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-blue;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-blue-light;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-blue;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-blue-light;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-blue;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-blue-light;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-blue-light;
+    	background-color: $color-white;
+    }
+}
+
+.roxo {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-purple-dark;
+	}
+	.m-bg {
+		background-color: $color-purple;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-purple-dark;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-purple;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-purple-dark;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-purple;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-purple-dark;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-purple;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-purple-dark;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-purple;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-purple;
+    	background-color: $color-white;
+    }
+}
+
+.rosa {
+	color: $color-white; a { color: $color-white; }
+	h1, h2, h3, h4, h5, h6, a {
+		text-shadow:2px 2px 0px $color-purple;
+	}
+	.m-bg {
+		background-color: $color-pink;
+	}
+	.list {
+		li {
+			&:before {
+				color: $color-purple;
+			}
+		}
+	}
+	.sanfona {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-pink;
+		}
+		h3.ui-accordion-header {
+			background-color: $color-purple;
+		}
+	}
+	.aba {
+		h1, h2, h3, h4, h5, h6 {
+			color: $color-pink;
+		}
+		ul.ui-tabs-nav {
+			li {
+				background-color: $color-purple;
+			}
+		}
+	}
+	.quadro-clique {
+		li {
+			.fa {
+				color: $color-pink;
+			}
+		}
+	}
+	.flipboard {
+		.cover {
+			* {
+				background-color: $color-purple;
+				color: $color-white;
+			}
+		}
+	}
+	.teste .questao .number {
+		color: $color-pink;
+    	background-color: $color-white;
+    }
+    .teste .enviar {
+    	color: $color-pink;
+    	background-color: $color-white;
+    }
+}

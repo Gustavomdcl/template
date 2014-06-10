@@ -1,0 +1,108 @@
+.m-menu {
+	background-color: $color-green-dark;
+	color: $color-white; a { color: $color-white; }
+	.icon-menu { display: none; }
+	& .l-container>ul { 
+		display:block;
+		padding: 10px;
+	}
+	ul {
+		text-align: center;
+		position: relative;
+		li {
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				width: 80px;
+				height: 40px;
+				padding: 10px;
+				border-radius: 5px;
+				behavior: url(assets/css/suiting/pie.htc);
+				&:hover, &.active {
+					background-color: $color-green-darker;
+				}
+			}
+			ul {
+				display: none;
+				position: absolute;
+				left: 0px;
+				top: 50px;
+				z-index: 180;
+				@include box-sizing(border-box);
+				padding: 10px;
+				width: 100%;
+				min-height: 70px;
+				background-color: $color-green-dark;
+				border-top: 14px solid $color-green-dark;
+				li {
+					a {
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
+	@include respond-to(max-width, $container-max-width) {
+		width: 100%;
+		position: fixed;
+		z-index: 120;
+		top: 0px;
+		height: 70px;
+		overflow: auto;
+		.icon-menu {
+			@include box-sizing(border-box);
+			padding: 10px;
+			display: inline-block;
+			cursor: pointer;
+			width: 100%;
+			text-align: center;
+			position: fixed;
+			z-index: 120;
+			top: 0px;
+			background-color: $color-green-dark;
+		}
+		& .l-container>ul { 
+			display:none;
+			@include box-sizing(border-box);
+			padding: 70px 10px 70px 10px;
+		}
+		ul {
+			li {
+				display: block;
+				a {
+					@include box-sizing(border-box);
+					display: block;
+					text-align: left;
+					width: 100%;
+					height: auto;
+					padding: 20px 10px;
+				}
+				ul {
+					display: block;
+					position: inherit;
+					min-height: auto;
+					@include box-sizing(border-box);
+					padding: 0px;
+					border-top: none;
+					li {
+						a {
+							padding: 20px 10px 20px 40px;
+						}
+					}
+				}
+			}
+		}
+		&.open-nav {
+			height: 100%;
+		}
+	}
+	@include respond-to(max-width, $mobile-landscape) {
+		height: 45px;
+		.icon-menu {
+			i {
+				font-size: 25px;
+			}
+		}
+	}
+}

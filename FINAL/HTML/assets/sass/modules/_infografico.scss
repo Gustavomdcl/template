@@ -1,0 +1,243 @@
+.m-infografico-inicio {
+	border-bottom: 10px solid $color-red-light;
+	@include respond-to(max-width, $container-max-width) {
+		display: none;
+	}
+}
+
+.m-infografico-final {
+	position: absolute;
+	left: 50%;
+	margin-left: -405px;
+	ul {
+		width: 336px;
+		height:10px;
+		background-color: $color-red-light;
+		li {
+			position: relative;
+			height: 140px;
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				cursor: default;
+				width: 140px;
+				height: 140px;
+				right: -139px;
+				bottom: 64px;
+				position: absolute;
+				i {
+					display: table-cell;
+					vertical-align: middle;
+					width: 140px;
+					height: 140px;
+					text-align: center;
+					color: $color-white;
+					font-size: 5em;
+					text-shadow:none;
+					background-color: $color-red-light;
+					border-radius: 50%;
+					behavior: url(assets/css/suiting/pie.htc);
+					@include respond-to(max-width, $container-max-width) {
+						position: fixed;
+						bottom: -10px;
+						font-size: 50px;
+						width: 70px;
+						height: 70px;
+						z-index: 150;
+						left: 50%;
+						margin-left: -35px;
+						i {
+							width: 70px;
+							height: 70px;
+							font-size: 4em;
+							background-color: $color-red-light;
+						}
+					}
+					@include respond-to(max-width, $mobile-landscape) {
+				        font-size: 25px;
+				        width: 45px;
+				        height: 45px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.m-infografico-change {
+	width: 810px;
+	height: 10px;
+	left: 50%;
+	margin-left: -405px;
+	position: absolute;
+	background-color: $color-red-light;
+	@include respond-to(max-width, $container-max-width) {
+		display: none;
+	}	
+}
+
+.right-info {
+	.m-infografico-sidebar {
+		margin-left: 320px;
+		.m-main-content {
+			left: inherit;
+			right: 100px;
+			@include respond-to(max-width, $container-max-width) {
+				right: 0px;
+			}
+			&:before {
+				border-top: 15px solid transparent;
+				border-bottom: 15px solid transparent;
+				border-left: 15px solid $color-red-light;
+				border-right: none;
+				position:absolute;
+				right: -25px;
+				left: inherit;
+				content:' ';
+				@include respond-to(max-width, $container-max-width) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.m-infografico-sidebar {
+	position: absolute;
+	left: 50%;
+	margin-left: -480px;
+	display: table-cell;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 75px;
+	z-index: 150;
+	@include respond-to(max-width, $container-max-width) {
+		z-index:initial;
+	}
+	ul {
+		margin-left: 62px;
+		display: table-cell;
+		vertical-align: middle;
+		width:10px;
+		height: 100%;
+		background-color: $color-red-light;
+		@include respond-to(max-width, $container-max-width) {
+			display: block;
+			width: 0px;
+			height: 0px;
+		}
+		li {
+			position: relative;
+			height: 140px;
+			@include respond-to(max-width, $container-max-width) {
+				width: 0px!important;
+			}
+			a {
+				display: table-cell;
+				vertical-align: middle;
+				cursor: pointer;
+				width: 140px;
+				height: 140px;
+				left: -65px;
+				position: absolute;
+				z-index: 20;
+				i {
+					display: table-cell;
+					vertical-align: middle;
+					width: 140px;
+					height: 140px;
+					text-align: center;
+					color: $color-white;
+					font-size: 5em;
+					background-color: $color-red-light;
+					text-shadow:none;
+					border-radius: 50%;
+					behavior: url(assets/css/suiting/pie.htc);
+				}
+				@include respond-to(max-width, $container-max-width) {
+					position: fixed;
+					bottom: 0px;
+					font-size: 10px;
+					width: 70px;
+					height: 70px;
+					z-index: 150;
+					left: 50%;
+					margin-left: -35px;
+					i {
+						width: 70px;
+						height: 70px;
+						font-size: 4em;
+						background-color: $color-red-light;
+					}
+				}
+				@include respond-to(max-width, $mobile-landscape) {
+					width: 45px;
+					height: 45px;
+					left: 50%;
+					margin-left: -23px;
+					i {
+				        font-size: 25px;
+				        width: 45px;
+				        height: 45px;
+				    }
+				}
+			}
+			.m-main-content {
+				z-index: 10;
+				h1, h2, h3, h4, h5, h6, a {
+					color: $color-red-light!important;
+					text-shadow:none;
+				}
+				p {
+					color: $color-base!important;
+				}
+				display: none;
+				@include box-sizing(border-box);
+				padding: 20px 40px;
+				background-color: $color-white;
+				width: 660px;
+				height: 310px;
+				position: absolute;
+				top: -80px;
+				left: 100px;
+				border: 10px solid $color-red-light;
+				border-radius: 5px;
+				behavior: url(assets/css/suiting/pie.htc);
+				h1, h2, h3, h4, h5, h6, a {
+					color: $color-red-light;
+				}
+				&:before {
+					border-top: 15px solid transparent;
+					border-bottom: 15px solid transparent;
+					border-right: 15px solid $color-red-light;
+					position:absolute;
+					left:50%;
+					left: -25px;
+					bottom: 125px;
+					display:block;
+					content:' ';
+				}
+				.scroll-content {
+					width: 560px;
+					height: 240px;
+					overflow: auto;
+				}
+				@include respond-to(max-width, $container-max-width) {
+					position: fixed;
+					top: 0px;
+					z-index: 130;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					overflow: auto;
+					.scroll-content {
+						padding-bottom: 40px;
+						width: auto;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}

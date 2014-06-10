@@ -1,0 +1,68 @@
+.m-text {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	width: 7 * ($container-max-width/$num_columns);
+	height: 460px;
+	padding-left: 320px;
+	a {
+		text-decoration: underline;
+	}
+	&.capa {
+		width: $container-max-width;
+		text-align: center;
+		vertical-align: middle;
+		padding-left: 0px;
+	}
+	&.capa > * {
+		padding-left: 20px;
+	}
+	@include respond-to(max-width, $container-max-width) {
+		padding-left: 0px;
+		display: block;
+		padding: 70px 10px;
+		overflow: auto;
+		&.capa {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	@include respond-to(max-width, $mobile-landscape) {
+		padding: 45px 10px;
+		&.capa {
+			padding: 70px 10px;
+		}
+		&.capa > * {
+			padding-left: 10px;
+		}
+		&.capa img {
+			width: 80px;
+		}
+	}
+}
+
+.right-info {
+	.m-text {
+		padding-left: 90px;
+		@include respond-to(max-width, $container-max-width) {
+			padding: 70px 10px;
+			@include respond-to(max-width, $mobile-landscape) {
+				padding: 45px 10px;
+			}
+		}
+	}
+}
+
+.saiba_mais, .teste_conhecimentos, .referencias_bibliograficas {
+	.m-text {
+		width: 11 * ($container-max-width/$num_columns);
+		padding-left: 90px;
+		@include respond-to(max-width, $container-max-width) {
+			padding: 70px 10px;
+			@include respond-to(max-width, $mobile-landscape) {
+				padding: 45px 10px;
+			}
+		}
+	}
+}

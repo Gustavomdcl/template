@@ -1,0 +1,27 @@
+.sanfona {
+	margin: 30px 0px;
+	h3.ui-accordion-header {
+		cursor: pointer;
+		background-color: $color-base;
+		color: $color-white;
+		padding: 10px;
+		text-shadow: none;
+		outline: none;
+		margin: 0px;
+		span.ui-icon {
+			display: inline-block;
+			margin-right: 10px;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+	}
+	div.ui-accordion-content {
+		background-color: $color-white;
+		color: $color-base;
+		padding: 10px;
+	}
+}
