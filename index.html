@@ -41,24 +41,25 @@
 	<!-- modernizr modernizr.com -->
 	<script src="assets/min/modernizr.min.js"></script>
 	<script src="assets/bookblock/js/modernizr.custom.js"></script>
-	<style>
-	.m-menu ul li ul {
-		top: 50px;
+	<!-- mobile video -->
+	<script src="assets/min/mobile.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	if(DetectIphoneOrIpod() || DetectS60OssBrowser() || DetectAndroid() || DetectWindowsMobile() || DetectBlackBerry() || DetectPalmOS()) {
+		var video = document.getElementById(‘video’);
+		video.addEventListener(‘click’,function(){
+			this.play();
+		},false);
+	} else {
+		var clicked = false;
+		var video = document.getElementById(‘video’);
+		video.addEventListener(‘click’,function(){
+			if(clicked == false){
+				this.play();
+				clicked = true;
+			}
+		},false);
 	}
-	.component.component-small.fxPhotoBrowse {
-		margin-top: 50px;
-	}
-	.component.component-small.fxPhotoBrowse .prev:before {
-		font-family: FontAwesome;
-		content: "\f053";
-		color: #fff;
-	}
-	.component.component-small.fxPhotoBrowse .next:before {
-		font-family: FontAwesome;
-		content: "\f054";
-		color: #fff;
-	}
-	</style>
+	</script>
 
 </head>
 
@@ -119,7 +120,9 @@
 								<li><a href="#l-flipcard">Flip Card</a></li>
 								<li><a href="#l-modal">Modal</a></li>
 								<li><a href="#l-aba">Aba</a></li>
+								<li><a href="#l-video">Vídeo</a></li>
 								<li><a href="#l-saiba1">Saiba Mais</a></li>
+								<li><a href="#l-caixa">Caixa</a></li>
 								<li><a href="#l-page-flip">Page Flip</a></li>
 								<li><a href="#l-qc-icone">Quadro Clique</a></li>
 								<li><a href="#l-slider">Slider</a></li>
@@ -656,6 +659,124 @@
 			</div><!-- .m-bg -->
 
 		</section><!-- #l-saiba1.m-bloco -->
+
+		<!-- video  
+		======================================================== -->
+		<section id="l-video" class="m-bloco verde_claro">
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
+
+			<div class="m-bg" style="background-image: url('');">
+
+				<div class="m-fx triangulos">
+
+					<div class="l-container cf">
+
+						<div class="m-text">
+
+							<header><h1>Vídeo</h1></header>
+							<p>Veja o vídeo abaixo:</p>
+
+							<video id="video" autobuffer width="540" height="360" controls="controls" poster="assets/video/movie.jpg" style="margin:25px 0px;"><!-- http://www.blackstonemedia.com/blog/2010/11/19/make-html-5-video-work-in-all-browsers-including-mobile/ -->
+
+								<source src="assets/video/movie.webm" type="video/webm">
+
+								<source src="assets/video/movie.ogv" type="video/ogg">
+
+								<source src="assets/video/movie.mp4">
+
+								<source src="assets/video/movie.m4v">
+
+								<object type="application/x-shockwave-flash" data="assets/video/movie.swf" width="320" height="280">
+
+									<param name="movie" value="assets/video/movie.swf" />
+
+									<param name="wmode" value="transparent" />
+
+								</object>
+
+								Seu navegador não suporta vídeo.
+
+							</video>
+
+						</div><!-- .m-text -->
+
+					</div><!-- .l-container.cf -->
+
+					<!-- LIVRO ABERTO ABAIXO --> 
+
+				</div><!-- .m-fx.triangulos -->
+
+			</div><!-- .m-bg -->
+
+		</section><!-- #l-video.m-bloco -->
+
+		<!-- caixa 
+		======================================================== -->
+		<section id="l-caixa" class="m-bloco roxo right-info">
+
+			<div class="m-infografico-change"></div><!-- .m-infografico-change -->
+
+			<div class="m-infografico-sidebar l-col2">
+
+						<ul>
+							<li>
+								<a class="button-infografico"><i class="fa fa-align-left"></i></a>
+								<div class="m-main-content">
+
+									<div class="scroll-content">
+
+										<header><h1>Sobre</h1></header>
+										<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong>.</p>
+
+									</div><!-- .scroll-content -->
+
+								</div><!-- .m-main-content -->
+							</li>
+						</ul>
+
+					</div><!-- .m-infografico-sidebar.l-col2 -->
+
+			<div class="m-bg" style="background-image: url('');">
+
+				<div class="m-fx linhas_triangulares">
+
+					<div class="l-container cf">
+
+						<div class="m-text">
+
+							<header><h1>Caixa</h1></header>
+
+							<p>Clique na caixa abaixo para saber mais</p>
+
+							<ul class="nav quadro-clique">
+								<li><a href="#caixa1" class="modal fa fa-dropbox"></a></li>
+							</ul>
+
+							<div id="caixa1" class="modal-content" style="max-width:654px;height:388px;">
+								<h2>Caixa</h2>
+
+								<p>Etiam convallis dui sed nibh tempor, nec commodo elit eleifend. <strong>Pellentesque</strong>.</p>
+							</div><!-- #content_modal1 -->
+
+						</div><!-- .m-text -->
+
+					</div><!-- .l-container.cf -->
+
+				</div><!-- .m-fx.triangulos -->
+
+			</div><!-- .m-bg -->
+
+		</section><!-- #l-caixa.m-bloco -->
 
 		<!-- page-flip 
 		======================================================== -->

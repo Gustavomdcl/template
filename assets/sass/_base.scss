@@ -157,3 +157,17 @@ a {
   z-index:1000;
   width: 100%;
 }
+
+.component.component-small.fxPhotoBrowse {
+  margin-top: 50px;
+}
+.component.component-small.fxPhotoBrowse .prev:before {
+  font-family: FontAwesome;
+  content: "\f053";
+  color: #fff;
+}
+.component.component-small.fxPhotoBrowse .next:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  color: #fff;
+}

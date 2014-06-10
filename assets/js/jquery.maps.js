@@ -1,6 +1,6 @@
 // /!\ =========================== ESTILIZAR O GOOGLE MAPS =========================== /!\
 
-function initialize() {
+function initializeMaps() {
 	//https://developers.google.com/maps/documentation/javascript/styling?hl=pt-br
 	//https://developers.google.com/maps/documentation/javascript/reference?hl=pt-br#MapTypeStyleFeatureType
 	var styles = [ // ALTERAR INFORMAÇÕES http://software.stadtwerk.org/google_maps_colorizr/#
@@ -157,7 +157,7 @@ function loadScript() {
   script.type = 'text/javascript';
   script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
       'libraries=places&' +
-      'callback=initialize';
+      'callback=initializeMaps';
   document.body.appendChild(script);
 }
 

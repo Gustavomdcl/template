@@ -289,10 +289,23 @@ function MobileTextResize(e){
 // FANCYBOX ==========================
 
 function fancyBoxLoader() {
-	$('.modal').fancybox();
+	$('.modal').fancybox({
+	  helpers: {
+	    overlay: {
+	      locked: false
+	    }
+	  }
+	});
 	$("img").click(function() {
 		if($(this).hasClass('no-fancybox')){} else{
-			$.fancybox.open($(this).attr('src'));
+			$.fancybox.open($(this).attr('src'),{
+			  padding: 0,
+			  helpers: {
+			    overlay: {
+			      locked: false
+			    }
+			  }
+			});
 		}
 	});
 }
@@ -621,6 +634,8 @@ function avancaSlide(){
 		refreshSanfona();
 		//aba
 		refreshAba();
+		//maps
+		initializeMaps();
 	}
 }
 
@@ -648,6 +663,8 @@ function voltaSlide(){
 		refreshSanfona();
 		//aba
 		refreshAba();
+		//maps
+		initializeMaps();
 	}
 }
 

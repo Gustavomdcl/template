@@ -67,7 +67,7 @@
       behavior: url(assets/css/suiting/pie.htc);
     }
     .pergunta {
-      width: 380px;
+      width: 335px;
       float: right;
       margin-top: 0px;
       @include respond-to(max-width, $container-max-width) {
