@@ -54,6 +54,20 @@
     	color: $color-red-light;;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-red-lighter;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-red;
+			}
+			&.subtitle-table {
+				background-color: $color-red-light;
+			}
+		}
+	}
 }
 
 .verde_musgo {
@@ -112,6 +126,20 @@
     	color: $color-green-dark;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-green;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-green-darker;
+			}
+			&.subtitle-table {
+				background-color: $color-green-dark;
+			}
+		}
+	}
 }
 
 .verde_claro {
@@ -170,6 +198,20 @@
     	color: $color-green-light;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-green-light;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-green;
+			}
+			&.subtitle-table {
+				background-color: $color-green-light;
+			}
+		}
+	}
 }
 
 .verde_padrao {
@@ -228,6 +270,20 @@
     	color: $color-green;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-green-light;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-green-dark;
+			}
+			&.subtitle-table {
+				background-color: $color-green;
+			}
+		}
+	}
 }
 
 .laranja {
@@ -286,6 +342,20 @@
     	color: $color-orange;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-orange-light;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-red-light;
+			}
+			&.subtitle-table {
+				background-color: $color-orange;
+			}
+		}
+	}
 }
 
 .amarelo {
@@ -344,6 +414,20 @@
     	color: $color-yellow;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-yellow;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-orange;
+			}
+			&.subtitle-table {
+				background-color: $color-orange-light;
+			}
+		}
+	}
 }
 
 .verde_amarelado {
@@ -402,6 +486,20 @@
     	color: $color-musgo;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-musgo;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-green;
+			}
+			&.subtitle-table {
+				background-color: $color-green-light;
+			}
+		}
+	}
 }
 
 .azul_escuro {
@@ -460,6 +558,20 @@
     	color: $color-blue-dark;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-blue-dark;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-base;
+			}
+			&.subtitle-table {
+				background-color: $color-gray-darker;
+			}
+		}
+	}
 }
 
 .azul_medio {
@@ -518,6 +630,20 @@
     	color: $color-blue;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-blue;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-blue-dark;
+			}
+			&.subtitle-table {
+				background-color: $color-blue-dark;
+			}
+		}
+	}
 }
 
 .azul_claro {
@@ -576,6 +702,20 @@
     	color: $color-blue-light;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-blue-light;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-blue-dark;
+			}
+			&.subtitle-table {
+				background-color: $color-blue;
+			}
+		}
+	}
 }
 
 .roxo {
@@ -634,6 +774,20 @@
     	color: $color-purple;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-purple;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-purple-dark;
+			}
+			&.subtitle-table {
+				background-color: $color-purple;
+			}
+		}
+	}
 }
 
 .rosa {
@@ -692,4 +846,18 @@
     	color: $color-pink;
     	background-color: $color-white;
     }
+    table {
+		background-color: $color-pink;
+		&, & tr, & tr td {
+			border: 1px solid $color-white;
+		}
+		tr {
+			&.title-table {
+				background-color: $color-purple;
+			}
+			&.subtitle-table {
+				background-color: $color-pink;
+			}
+		}
+	}
 }

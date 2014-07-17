@@ -1,0 +1,25 @@
+table {
+	background-color: $color-gray;
+	&, & tr, & tr td {
+		border: 1px solid $color-gray-light;
+	}
+	tr {
+		&.title-table {
+			background-color: $color-gray-darker;
+			text-align: center;
+			td {
+				text-align: center;
+			}
+		}
+		&.subtitle-table {
+			background-color: $color-gray-dark;
+			text-align: center;
+			td {
+				text-align: center;
+			}
+		}
+		td {
+			padding: 5px;
+		}
+	}
+}
